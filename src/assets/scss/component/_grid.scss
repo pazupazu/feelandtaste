@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*
+  grid
+  説明：グリッド
+ */
+
+
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &--item-c{
+    align-items: center;
+  }
+
+  &--mb-md{
+    margin:0 0 10px;
+    @include media(sp) {
+      margin:0 0 5px;
+    }
+  }
+  &--mb-lg{
+    margin:0 0 30px;
+    @include media(sp) {
+      margin:0 0 20px;
+    }
+  }
+
+  @include media(tab) {
+    .col.l1 { width: 8.33%; }
+    .col.l2 { width: 16.66%; }
+    .col.l3 { width: 25%; }
+    .col.l4 { width: 33.33%; }
+    .col.l5 { width: 41.66%; }
+    .col.l6 { width: 50%; }
+    .col.l7 { width: 58.33%; }
+    .col.l8 { width: 66.66%; }
+    .col.l9 { width: 75%; }
+    .col.l10 { width: 83.33%; }
+    .col.l11 { width: 91.66%; }
+    .col.l12 { width: 100%; }
+  } 
+
+  @include media(sp) {
+    .col.s1 { width: 8.33%; }
+    .col.s2 { width: 16.66%; }
+    .col.s3 { width: 25%; }
+    .col.s4 { width: 33.33%; }
+    .col.s5 { width: 41.66%; }
+    .col.s6 { width: 50%; }
+    .col.s7 { width: 58.33%; }
+    .col.s8 { width: 66.66%; }
+    .col.s9 { width: 75%; }
+    .col.s10 { width: 83.33%; }
+    .col.s11 { width: 91.66%; }
+    .col.s12 { width: 100%; }
+  }
+
+}
+
+/*
+ 12分割以外
+ 均等分割
+ 対象は子要素のdiv,a
+ */
+.sep {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+
+  @include media(tab) {
+      &.sep-l1 > div { width:100%; }
+      &.sep-l2 > div { width:50%; }
+      &.sep-l3 > div { width:33.333%; }
+      &.sep-l4 > div, &.sep-l4 > a { width:25%; }
+      &.sep-l5 > div { width:20%; }
+      &.sep-l8 > div, &.sep-l8 > a { width:12.5%; }
+  }
+  @include media(sp) {
+      &.sep-s1 > div { width:100% }
+      &.sep-s2 > div, &.sep-s2 > a  { width:50% }
+      &.sep-s3 > div { width:33.333% }
+  }
+
+}
+
+

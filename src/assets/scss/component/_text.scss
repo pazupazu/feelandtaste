@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*
+  text
+ */
+
+.text{
+  margin:0;
+  padding:0;
+  word-break:break-all;
+
+  &-desc{
+    @include font-size(16);
+    line-height: 2.6;
+    letter-spacing: .2em;
+
+    @include media(sp) {
+      @include font-size(14);
+      line-height: 2;
+    }
+  }
+
+  &-sm{
+    @include font-size(12);
+    line-height: 1.6;
+  }
+  &-md{
+    @include font-size(14);
+    line-height: 2;
+    letter-spacing: .08em;
+  }
+  &-lg{
+    @include font-size(16);
+    line-height: 2;
+    letter-spacing: .2em;
+  }
+
+  a,
+  &--blue{
+    color:#7185a0;
+  }
+  &--dblue{
+    color: #515e6c;
+  }
+  &--red{
+    color:#ff3399;
+  }
+
+  &--pd{
+    padding:0 10px;
+  }
+}
+
+//位置
+.text{
+
+  &--center{
+    text-align:center;
+  }
+  &--left{
+    text-align:left;
+  }
+  &--right{
+    text-align:right;
+  }
+}
+
+//brand
+.text-brand{
+  @include font-size(33);
+  font-family: 'Bentham';
+  text-align: right;
+  word-wrap: break-word;
+
+  @include media(sp) {
+    margin:0 0 10px;
+    text-align: center;
+  }
+
+  a{
+    color:#000;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &--desc{
+    padding:0 40px 0 20px !important;
+    @include font-size(14);
+    line-height: 1.6;
+
+    @include media(sp) {
+      padding:0 10px !important;
+    }
+  }
+}
+
+

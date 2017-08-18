@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+<title>CONTACT / Miutt</title>
+<meta charset="SHIFT-JIS"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="キーワード" />
+<meta name="description" content="ディスクリプション" />
+<meta id="dviewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;">
+
+<link rel="shortcut icon" href="miutt.ico" type="image/ico" />
+
+<meta content="miutt" property="og:title" />
+<meta content="article" property="og:type" />
+<meta content="" property="og:url" />
+<meta content="#" property="og:image" />
+<meta content="" />
+<meta content="miutt" property="og:site_name" />
+
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body>
+
+<% include ../module/_header %>
+
+<div class="section">
+<div class="section__block--short">
+
+    <div class="page-header">
+        <h1 class="title--primary">CONTACT</h1>
+    </div>
+
+</div><!-- /.section__block -->
+</div><!-- /.section -->
+
+
+<div class="section">
+<div class="section__block--short">
+
+<form method="post" action="contact.cgi" name="form00" id="form00">
+<input type=hidden name="お名前" value="_#Name">
+<input type=hidden name="会社名" value="_#Company">
+<input type=hidden name="E-mail" value="_#Email">
+<input type=hidden name="お問い合せ項目" value="_#Item">
+<input type=hidden name="お問い合せ内容" value="_#Etc">
+
+<div class="form">
+
+<!-- 確認 -->
+    <div class="form__item form-input">
+        <p class="text text-sm text--pd"><span class="text--red">＊</span>お名前</p>
+        <p class="text text-lg text--pd">_#Name</p>
+    </div>
+
+    <div class="form__item form-input">
+        <p class="text text-sm text--pd">会社名</p>
+        <p class="text text-lg text--pd">_#Company</p>
+    </div>
+
+    <div class="form__item form-input">
+        <p class="text text-sm text--pd"><span class="text--red">＊</span>メールアドレス</p>
+        <p class="text text-lg text--pd">_#Email</p>
+    </div>
+
+    <div class="form__item form-radio">
+        <p class="text text-sm">お問い合わせの項目<span class="text--red">＊</span>（どれか１つを選択してください）</p>
+        <p class="text text-lg">_#Item</p>
+    </div>
+
+    <div class="form__item form-textarea-re">
+        <p class="text text-sm text--pd">お問い合わせ内容・ご質問などをご記入ください<span class="text--red">＊</span><br>（お取引に関する場合は店名もお書き添えください）</p>
+        <p class="text text-lg text--pd">_#Etc</p>
+    </div>
+
+    <div class="form__item form-btn">
+        <input type="reset" name="reset" onclick="history.back()" value="戻る / BACK">
+        <input type="submit" name="submit" value="送信 / SUBMIT">
+    </div>
+
+<!-- 確認 -->
+
+
+</div><!-- /.form -->
+
+</form>
+
+</div><!-- /.section__block -->
+</div><!-- /.section -->
+
+
+
+<% include ../module/_footer %>
+
+    <script type="text/javascript" src="../assets/js/default.js"></script>
+</body>
+</html>

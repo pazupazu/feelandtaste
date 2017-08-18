@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+  panel
+  説明：レイアウト用コンポーネント
+*/
+
+.panel{
+    margin:0 0 35px;
+    padding:0 40px 30px;
+
+    @include media(sp) {
+      margin:0 0 20px;
+      padding:0 0 20px;
+    }
+
+  &--bd{
+    border-bottom: 1px solid #a29d9c;
+  }
+
+  &--end{
+    margin:0;
+    padding:0 40px;
+    @include media(sp) {
+      margin:0;
+      padding:0;
+    }
+  }
+
+  // stock
+  &-list{
+    margin:0 20px 40px 0;
+    @include media(sp) {
+    margin:0 0 40px;
+    }
+    a{
+      color:#40608c;
+    }
+  }
+}

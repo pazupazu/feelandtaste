@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+<title>CONTACT / Miutt</title>
+<meta charset="SHIFT-JIS"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="キーワード" />
+<meta name="description" content="ディスクリプション" />
+<meta id="dviewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;">
+
+<link rel="shortcut icon" href="miutt.ico" type="image/ico" />
+
+<meta content="miutt" property="og:title" />
+<meta content="article" property="og:type" />
+<meta content="" property="og:url" />
+<meta content="#" property="og:image" />
+<meta content="" />
+<meta content="miutt" property="og:site_name" />
+
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body>
+
+<% include ../module/_header %>
+
+<div class="section">
+<div class="section__block--short">
+
+    <div class="page-header">
+        <h1 class="title--primary">CONTACT</h1>
+    </div>
+
+</div><!-- /.section__block -->
+</div><!-- /.section -->
+
+
+<div class="section">
+<div class="section__block--short">
+
+            <p class="text text-desc">
+Miutt商品に関するお問い合わせや、<br>
+ユニゾンへのご依頼・ご相談など、お気軽にご連絡ください。<br>
+お見積りや柄作成に関するお問い合わせも、こちらより承ります。
+<br><br>
+お送りいただいた内容は、控えとしてお客様のメールアドレスにも送信されます。<br>
+その後、担当者より折り返しメールにてご連絡させていただきます。
+<br><br>
+<span class="text--red">＊</span>は必須項目です。<br>
+送信がうまくいかない場合は、お手数ですが<br>
+<a href="mailto:contact@miutt.jp">contact@miutt.jp</a>までメールをお送りください。
+            </p>
+
+</div><!-- /.section__block -->
+</div><!-- /.section -->
+
+
+<div class="section">
+<div class="section__block--short">
+
+
+<form method="post" action="contact.cgi" name="form00" id="form00">
+<!-- 入力確認画面をだす -->
+
+<input type=hidden name="_check" value="1">
+<input type=hidden name="_Name" value="お名前">
+<input type=hidden name="_Company" value="会社名">
+<input type=hidden name="_Email" value="E-mail">
+<input type=hidden name="_Item" value="お問い合せ項目">
+<input type=hidden name="_Etc" value="お問い合せ内容">
+
+<div class="form">
+
+    <div class="form__item form-input need">
+        <input type="text" name="お名前" id="name" value="" placeholder="お名前">
+    </div>
+
+    <div class="form__item form-input">
+        <input type="text" name="会社名" id="office" value="" placeholder="会社名">
+    </div>
+
+    <div class="form__item form-input need">
+        <input type="email" name="E-mail" id="email" value="" placeholder="メールアドレス">
+    </div>
+    
+    <div class="form__item form-radio">
+        <p class="text text-lg">お問い合わせの項目<span class="text--red">＊</span>（どれか１つを選択してください）</p>
+        <ul class="radio-list">
+            <li><label><input type="radio" name="お問い合せ項目" value="Miutt商品について">Miutt商品について</label></li>
+            <li><label><input type="radio" name="お問い合せ項目" value="Miutt商品の媒体使用、レンタル、スペシャルオーダーについて">Miutt商品の媒体使用、レンタル、スペシャルオーダーについて</label></li>
+            <li><label><input type="radio" name="お問い合せ項目" value="ユニゾンへの企画・制作・柄作成のご依頼">ユニゾンへの企画・制作・柄作成のご依頼</label></li>
+            <li><label><input type="radio" name="お問い合せ項目" value="お見積りのご依頼">お見積りのご依頼</label></li>
+        </ul>
+    </div>
+
+    <div class="form__item form-textarea">
+        <p class="text text-lg text--pd">
+お問い合わせ内容・ご質問などをご記入ください<span class="text--red">＊</span><br>
+（お取引に関する場合は店名もお書き添えください）
+        </p>
+        <textarea name="お問い合せ内容" id="message" cols="80" rows="10"></textarea>
+    </div>
+    
+    <p class="text text-lg text--pd">
+ご入力いただき、ありがとうございました。<br>
+上記の内容でよろしければ<br>
+下記の確認ボタンを押してください。
+    </p>
+
+    <div class="form__item form-btn">
+        <input type="submit" name="submit" value="確認 / CHECK">
+    </div>
+
+</div><!-- /.form -->
+
+</form>
+
+</div><!-- /.section__block -->
+</div><!-- /.section -->
+
+
+
+<% include ../module/_footer %>
+
+    <script type="text/javascript" src="../assets/js/default.js"></script>
+</body>
+</html>

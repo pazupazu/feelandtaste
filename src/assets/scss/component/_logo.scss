@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+  logo
+ */
+
+ .logo{
+  display: block;
+  width: 212px;
+  height: 84px;
+  margin:0 auto;
+
+  img{
+    max-width: 100%;
+  }
+
+  @include media(sp) {
+    width: 160px;
+    height: auto;
+  }
+
+ }

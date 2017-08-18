@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*
+  title
+ */
+
+.title{
+
+  &--primary{
+    margin:0 auto;
+    padding:0 0 50px;
+    @include font-size(30);
+    font-weight:normal;
+    letter-spacing: 0.2rem;
+    color:#7185a0;
+    text-align: center;
+    font-family: 'Droid Serif';
+    @include media(sp) {
+      padding:0 0 30px;
+      @include font-size(26);
+    }
+  }
+  &--secondary{
+    margin:0 0 20px;
+    padding:0 0 16px;
+    @include font-size(24);
+    font-weight:normal;
+    letter-spacing: 0.6rem;
+    font-family: 'Droid Serif',"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
+    @include media(sp) {
+      margin:0;
+      padding:0 0 10px;
+      @include font-size(18);
+    }
+
+    span{
+      display:block;
+      margin:10px 0 0;
+      @include font-size(19);
+      letter-spacing: 0.2rem;
+      @include media(sp) {
+        @include font-size(14);
+      }
+    }
+  }
+  &--tertiary{
+    margin:0;
+    padding:0 0 18px;
+    @include font-size(18);
+    font-weight:bold;
+    letter-spacing: 0.4rem;
+
+    @include media(sp) {
+      @include font-size(16);
+      line-height: 1.6;
+    }
+  }
+  
+  &--blue{
+    color:#7185a0;
+  }
+}
+

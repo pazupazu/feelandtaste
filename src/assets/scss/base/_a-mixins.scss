@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+// ====================================================================
+// 関数名: media-width
+// 概要: ブレイクポイントを設定（固定値）
+// @include media(pc)
+// ====================================================================
+@mixin media($media-width) {
+  // ブレイクポイントを設定（固定値）
+  // スマホ（〜640px） 
+  // タブレット（641px〜）
+  // PC（992px〜）
+
+
+  $bp-pc:      1200px;
+  $bp-tab:      992px;
+  $bp-sp:       641px;
+
+  @if $media-width == pc {
+    @media only screen and (min-width: $bp-tab) {
+      @content;
+    }
+  }
+  @else if $media-width == tab {
+    @media only screen and (min-width: $bp-sp) {
+      @content;
+    }
+  }
+  @else if $media-width == sp {
+    @media only screen and (max-width: $bp-sp) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-width: $media-width) {
+      @content;
+    }
+  }
+}
+
+
+// ====================================================================
+// 関数名: font-size
+// --------------------------------------------------------------------
+// 概要: フォントサイズ指定（％：IE向け、16pxを基準）
+// 使用例: @include font-size(20);　※20pxの場合
+// ====================================================================
+// @mixin font-size($size: 10, $base: 10) {
+//  font-size: $size + px;
+//  font-size: $size * 0.1rem;
+// }
+
+// フォントサイズ px rem指定 引数px値
+@mixin font-size($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}

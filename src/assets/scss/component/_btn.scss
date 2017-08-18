@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*
+  btn
+ */
+
+.btn-text{
+  display: block;
+  margin:0 0 10px;
+  padding:10px 0 10px 50px;
+  @include font-size(16);
+  font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  letter-spacing: .8px;
+  transition: 0.5s;
+  color:#4c4f5b;
+
+  @include media(sp) {
+    margin:0;
+    padding:10px 0 10px 40px;
+    @include font-size(14);
+    line-height: 1.4;
+  }
+
+  &:hover{
+    color:#40608c;
+  }
+
+  &--inst{
+    background: url(../img/icon-inst.png) center left no-repeat;
+  }
+  &--blog{
+    padding:16px 0 16px 50px;
+    background: url(../img/icon-blog.png) center left no-repeat;
+    @include media(sp) {
+      padding:10px 0 10px 40px;
+    }
+  }
+  &--facebook{
+    background: url(../img/icon-facebook.png) center left no-repeat;
+  }
+  &--mail{
+    background: url(../img/icon-mail.png) center left no-repeat;
+  }
+  @include media(sp) {
+    background-size: 30px;
+  }
+}
+
+
+/*
+  sns
+ */
+.btn-sns{
+  display:inline-block;
+  
+
+  &--facebook,
+  &--inst{
+    background-position:0 0;
+    background-repeat: no-repeat;
+    transition:0.5s;
+  }
+
+  &--facebook{
+    width:35px;
+    height:35px;
+    margin:0 15px 0 0;
+    background-image:url(../img/btn_facebook.png);
+    background-size: 35px auto;
+    &:hover{
+      background-image:url(../img/btn_facebook--h.png);
+    }
+  }
+  &--inst{
+    width:35px;
+    height:35px;
+    margin:0 12px 0 0;
+    background-image:url(../img/btn_inst.png);
+    background-size: 35px auto;
+    &:hover{
+      background-image:url(../img/btn_inst--h.png);
+    }
+  }
+}
+
+/*
+  バーガーメニュー
+*/
+.btn-burger{
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index:100;
+  cursor:pointer;
+  transition: 0.5s;
+
+  &:hover{
+    .btn-burger__icon{
+      background: #405276;
+      &:before,
+      &:after{
+        background: #405276;
+      }
+    }
+  }
+
+  &__icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    margin: 0;
+    background: #000;
+    transition: .2s;
+
+    &:before,
+    &:after{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #000;
+      transition: .3s;
+    }
+
+    &:before{
+      margin-top: -12px;
+    }
+    &:after{
+      margin-top: 10px;
+    }
+  }
+
+  &__text{
+    position:absolute;
+    top:50px;
+    left:-8px;
+    transform:rotate(90deg);
+    font-family: 'Amiri',"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
+    @include font-size(18);
+    letter-spacing: .04em;
+  }
+
+  //状態変化 閉じるアイコン
+  &__icon--close{
+    background: transparent !important;
+
+    &:before,
+    &:after{
+      margin-top: 0;
+    }
+    &:before{
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    &:after{
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+}
+
+

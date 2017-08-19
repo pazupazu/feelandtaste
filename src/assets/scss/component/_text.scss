@@ -18,14 +18,19 @@
       line-height: 2;
     }
   }
-
+  &-i {
+    font-style: italic;
+  }
+  &-b {
+    font-weight: bold;
+  }
   &-sm{
     @include font-size(12);
     line-height: 1.6;
   }
   &-md{
-    @include font-size(14);
-    line-height: 2;
+    @include font-size(15);
+    line-height: 2.133;
     letter-spacing: .08em;
   }
   &-lg{

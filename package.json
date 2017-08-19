@@ -42,6 +42,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "fullpage.js": "^2.9.4"
+    "fullpage.js": "^2.9.4",
+    "object-fit-images": "^3.2.3"
   }
 }

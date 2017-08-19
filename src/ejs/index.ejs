@@ -1,22 +1,175 @@
 
+<%
+var data = {
+  title: 'FEEL AND TASTE',
+  keyword: 'FEEL AND TASTE,カバン,通販',
+  desc: 'FEEL AND TASTE description'
+};
+%>
 <% include module/_head %>
 <body class="index">
 
   <% include module/_header %>
     
   <div id="fullpage">
-    <div class="section section--1">
+    <div class="section section--1 section--top">
       <div class="logo__wrapper">
         <h1 class="logo"><a href="index.html"><img src="assets/image/logo.png" alt="secours"></a></h1>
-      </div>
-      <div class="btn-group"><!-- btnコンポーネント -->
+      </div><!-- /.logo__wrapper -->
+      <div class="btn-group">
         <a class="btn-sns btn-sns--facebook" href="https://www.facebook.com/Miutt.world/" target="_blank">FB</a>
         <a class="btn-sns btn-sns--inst" href="https://www.instagram.com/miuttofficialaccount/" target="_blank">INST</a>
+      </div><!-- /.btn-group -->
+    </div><!-- /.section--1 -->
+
+    <div class="section section--2">
+      <img src="assets/image/IMAGE1.jpg" alt="FEELANDTASTE" class="image-full">
+    </div><!-- /.section--2 -->
+
+    <div class="section section--3">
+      <img src="assets/image/IMAGE2.jpg" alt="FEELANDTASTE" class="image-full">
+    </div><!-- /.section--3 -->
+
+    <div class="section section--4">
+      <img src="assets/image/IMAGE3.jpg" alt="FEELANDTASTE" class="image-full">
+    </div><!-- /.section--4 -->
+
+    <div class="section section--5 section--story">
+      <div class="story">
+        <h2 class="title title--story">
+          <span>FEEL AND TASTE 感じること、味わうこと</span>
+          <img class="image-mw100" src="assets/image/title-story.png" alt="感じること、味わうこと">
+        </h2><!-- /.title--story -->
+        <div class="story__body__wrapper row">
+          <div class="story__body col l6">
+            <p class="text text-md">
+              私たちが日常で使っている“五感”。 <br>その一つ一つが、私たちの個性を<br>ゆっくりと紡いでいきます。
+            </p>
+            <p class="text text-md">
+              ファッションを纏うとき、<br>その人を魅力的にみせるのは、<br>きっと 流行を感知する能力よりも、<br>その人の内側にある感性。<br>時間と経験によって、ゆっくりと<br>積み重ねられていった“五感”のひだ。<br>それは、年輪のように、指紋のように、<br>同じものはない、私たちを形づくる芯のようなもの。
+            </p>
+          </div><!-- /.story__body -->
+          <div class="story__body col l6">
+            <p class="text text-md">
+              そんな思いを托したブランド FELL AND  TASTE は、<br>素材の持つブレない美しさを大切に、<br>ものに宿る力を表現していきます。
+            </p>
+            <p class="text text-md">  
+              糸に出会い、素材に出会う。<br>そこから生まれる、美しい佇まい。<br>器のような、芯のある美しさ。
+            </p>
+            <p class="text text-md">
+              声高に存在を主張するわけではないのに、<br>身につければそっと語りかけてくる。<br>まるで、日常に溶け込むアートのように。
+            </p>
+            <p class="text text-md">
+              そんなものづくりを目指しています。<br>スタイルを心地良くしてくれる、<br>上質でシンプルな形の中に、<br>選ぶ人の感性を伝えるアティチュードを湛えて。 
+            </p>
+          </div><!-- /.story__body -->
+        </div><!-- /.story__body__wrapper -->
+      </div><!-- /.story -->
+    </div><!-- /.section--5 -->
+
+    <div class="section section--6 section--story-eng">
+      <div class="story">
+        <h2 class="title title--story-eng">
+          To Feel and to Taste
+        </h2>
+        <div class="story__body__wrapper">
+          <div class="story__body">
+            <p class="text text-eng text-i">
+              It can be said that each of the five senses plays its part in gradually molding one’s personality.
+            </p>
+            <p class="text text-eng text-i">
+              When it comes to fashion, <br>
+              It's true beauty is embodied not when one wears something that is simply “in-style”<br>
+              but when the fashion reflects the person himself. <br>
+              The time and experience that the “five senses” have put together.<br>
+              Like fingerprints and how each and every one of us age, there will not be a same one,<br>
+              but each would always act as a core part in our experience.
+            </p>
+            <p class="text text-eng text-i">
+              Feel and Taste<br>
+              Cherishes the material’s true beauty filled with its unique character built up through time.   
+            </p>
+            <p class="text text-eng text-i">
+              From the threads to materials;<br>
+              The many encounters lead to such creation.<br>
+              A work of art, a promising beauty. 
+            </p>
+            <p class="text text-eng text-i">
+              The piece will not demand its existence,<br>
+              However it will gently tell you its story when it is close to one.<br>
+              Like an art that is blended into one’s everyday life.<br>
+              That is what we aim for.
+            </p>
+          </div><!-- /.story__body -->
+        </div><!-- /.story__body__wrapper -->
+      </div><!-- /.story -->
+    </div><!-- /.section--6 -->
+
+    <div class="section section--7 section--story-eng-continuance">
+      <div class="story">
+        <div class="story__body__wrapper">
+          <div class="story__body">
+            <p class="text text-eng text-i">
+                To be styled comfortably,<br>
+                With elegance expressed in such simple silhouette.<br>
+                To embody the taste and attitude of the one who chooses the product. 
+            </p>
+          </div><!-- /.story__body -->
+        </div><!-- /.story__body__wrapper -->
+      </div><!-- /.story -->
+      <div class="image-wide">
+        <img src="assets/image/ph1.jpg" alt="">
       </div>
-    </div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
+      <div>
+        <a href="#section1">top</a>
+      </div>
+    </div><!-- /.section--7 -->
+
+    <div class="section section--8 section--new-collection">
+      <div class="image-wide">
+        <img src="assets/image/ph2.jpg" alt="">
+      </div>
+      <div class="title title--new-collection">
+        <img src="assets/image/title-new-collection.png" alt="">
+      </div>
+    </div><!-- /.section--8 -->
+    <div class="section section--9 section--more">
+      <div class="image-wide">
+        <img src="assets/image/ph2.jpg" alt="">
+      </div>
+      <div class="more row row--item-sb">
+        <div class="more__text col l4">
+          <img class="image-mw100" src="assets/image/more-text.png" alt="">
+        </div>
+        <div class="more__anchor col l1">
+          <a href="more">more</a>
+        </div>
+      </div>
+    </div><!-- /.section--9 -->
+
+    <div class="section section--10 section--archives">
+      <div class="arcives__wrapper row">
+        <div class="arcive col l3">
+          <div class="arcive__image"><img src="assets/image/edition03.jpg" alt=""></div>
+          <div class="arcive__title">edition01</div>
+        </div>
+        <div class="arcive col l3">
+          <div class="arcive__image"><img src="assets/image/edition01.jpg" alt=""></div>
+          <div class="arcive__title">edition02</div>
+        </div>
+        <div class="arcive col l3">
+          <div class="arcive__image"></div>
+          <div class="arcive__title">edition03</div>
+        </div>
+      </div>
+    </div><!-- /.section--10 -->
+
+    <!-- ↓opne時非表示 -->
+    <div class="section section--11">
+    </div><!-- /.section--11 -->
+    <!-- ↑opne時非表示 -->
+
+    <div class="section section--12"></div><!-- /.section--12 -->
   </div>
 
   <% include module/_footer %>

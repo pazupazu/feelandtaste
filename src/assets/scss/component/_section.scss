@@ -12,7 +12,7 @@
 .section--df {
 }
  // 個別
-.section--1 {
+.section--top {
   .logo__wrapper {
     height: 100vh;
     display: flex;
@@ -20,3 +20,54 @@
     justify-content: center;
   }
 }
+.story {
+  width: 96%;
+  height: 100vh;
+  margin: auto;
+  padding: 80px 20px;
+  background: #dbdedf;
+  @include media(tab) {
+    padding: 80px 40px;
+  }
+  @include media(pc) {
+    padding: 120px 120px 80px 120px;
+  }
+  .text {
+    margin-bottom: 40px;
+  }
+}
+
+.section--story-eng,
+.section--story-eng-continuance {
+  .story {
+    background: #c5cace;
+    .text {
+      margin-bottom: 36px;
+      color: #fff;
+      font-size: 17px;
+      line-height: 28px;
+    }
+  }
+}
+
+.section--story-eng-continuance {
+  .story {
+    height: auto;
+    margin-bottom: 80px;
+  }
+}
+
+.section--new-collection {
+  padding-top: 120px;
+}
+
+.section--more {
+  padding-top: 120px;
+  .more {
+    padding: 20px 80px 80px;
+    background: #d6d3d3;
+    .more__text {
+    }
+  }
+}
+  

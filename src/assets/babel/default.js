@@ -5,18 +5,18 @@
 // require
 global.$ = global.jQuery = require("jquery");
 
-// fullpage
- import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
+import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
+import objectFitImages from 'object-fit-images';
 
- $(document).ready(function() {
+$(document).ready(function() {
   //page top
-  $('.btn-top').on("click", function() {
-    console.log('OK');
-    $('body,html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
+  // $('.btn-top').on("click", function() {
+  //   console.log('OK');
+  //   $('body,html').animate({
+  //     scrollTop: 0
+  //   }, 500);
+    
+  // });
 
   //バーガーメニュー 開閉
   $(".js-hook-menu").on("click", function() {
@@ -38,10 +38,32 @@ global.$ = global.jQuery = require("jquery");
       $('.header .logo, .header .btn-group').fadeIn();
     }
   });
+
+  // object-fit ie polifily
+  // https://github.com/bfred-it/object-fit-images
+  // https://www.webcreatorbox.com/tech/object-fit
+  var fullImage = document.querySelectorAll('img.full-image');
+  objectFitImages(fullImage);
 });
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
+    anchors:[
+      'section1',
+      'section2',
+      'section3',
+      'section4',
+      'section5',
+      'section6',
+      'section7',
+      'section8', 
+      'section9', 
+      'section10', 
+      'section11',
+      'section12'
+    ],
+    scrollBar: true,
+
     onLeave: function(index, nextIndex, direction){
       var loadedSection = $(this);
       if(nextIndex >= 2){

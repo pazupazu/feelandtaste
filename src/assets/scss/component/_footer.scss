@@ -43,16 +43,3 @@
   left:0;
   z-index:10;
 }
-
-.btn-top {
-  position: fixed;
-  bottom: -5px;
-  right: 45px;
-  width:116px;
-  height:108px;
-  z-index: 0;
-  cursor:pointer;
-  @include media(sp) {
-    display:none;
-  }
-}

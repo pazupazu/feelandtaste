@@ -5,13 +5,11 @@
 */
 
 .gloval-nav{
-  position: absolute;
-  top:0;
-  right:-30%;
-  width:30%;
+  visibility: hidden;
+  opacity: 0;
+  width:100%;
   height:100vh;
   padding:0;
-  background: url(../img/bg-menu.png) 0 0 repeat;
   transition: 0.5s;
   overflow-y: auto;
 
@@ -57,7 +55,8 @@
   //状態変化 ベースクラス名並記 .gloval-navが必要
   // メニューオープン
   &--open{
-    right:0 !important;
+    visibility: visible;
+    opacity: 1;
     @include media(sp) {
       visibility: visible;
       opacity: 1;

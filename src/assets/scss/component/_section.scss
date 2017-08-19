@@ -5,81 +5,18 @@
  */
 
 
- /* ベース */
-.section{
-  margin: 0 0 48px;
-  @include media(sp) {
-    margin: 0 0 30px;
-  }
-
-  &--no-mb{
-    margin:0;
-  }
-
-  .section__block{
-    margin:0 auto;
-    @include media(tab) {
-     max-width:1256px;     
-     padding:0 30px;
-    }
-    @include media(sp) {
-     width: 100%;     
-     padding:0 30px;
-    }
-
-    &--short{
-      @include media(tab) {
-        margin:0 auto;
-        max-width:800px;     
-        padding:0 30px;
-      }
-      @include media(sp) {
-       width: 100%;     
-       padding:0 30px;
-      }
-    }
-
-    &--lp{
-      @include media(tab) {
-        padding-left:80px !important;
-      }
-    }
-    &--bp{
-      @include media(tab) {
-        padding-left:90px !important;
-        padding-right:90px !important;
-      }
-    }
-  }
+ // ベース
+ .section {
+   //
+ }
+.section--df {
 }
-
-
-/* 個別 */
-.section--brand01{
-  @include media(tab) {
-    .section__block{
-      padding-top:40px !important;
-      padding-bottom:30px !important;
-      background: url(../img/bg-brand01.png) center right no-repeat;
-    }
-  }
-}
-.section--brand02{
-  @include media(tab) {
-    .section__block{
-      padding-top:50px !important;
-      background: url(../img/bg-brand02.png) -100px top no-repeat;
-    }
-  }
-}
-
-.section--about01,
-.section--about02,
-.section--about03{
-  @include media(tab) {
-    .section__block{
-      padding-top:40px !important;
-      padding-bottom:40px !important;
-    }
+ // 個別
+.section--1 {
+  .logo__wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

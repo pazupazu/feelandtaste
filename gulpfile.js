@@ -9,7 +9,9 @@ var paths = {
     js : "./dist/assets/js/",
     scss : "./src/assets/scss/",
     css : "./dist/assets/css/",
-    ejs : "./src/ejs/"
+    ejs : "./src/ejs/",
+    imgSrc : './src/assets/image/',
+    imgDist : './dist/assets/image/',
 }
 
 
@@ -33,7 +35,7 @@ gulp.task("ejs", function() {
 
 // プラグインの読み込み
 var sass = require("gulp-sass");
-var rsass      = require('gulp-ruby-sass');
+var rsass = require('gulp-ruby-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var pleeease = require('gulp-pleeease');
 var clean = require('gulp-clean-css');
@@ -85,6 +87,19 @@ gulp.task('js', watchify(function(watchify) {
     .pipe(gulp.dest(paths.js))
 }))
 
+// 画像圧縮
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+
+gulp.task("imagemin", function(){
+    var image_src = paths.imgSrc + '/**/*.+(jpg|gif|svg|png)';
+    gulp.src( image_src )
+    .pipe(imagemin(
+        [pngquant({quality: '65-80', speed: 1})]
+    ))
+    .pipe(imagemin())
+    .pipe(gulp.dest( paths.imgDist ));
+});
 
 // Static Server + watching scss/html files
 var browserSync = require('browser-sync').create();

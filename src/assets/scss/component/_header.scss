@@ -16,27 +16,14 @@
       padding: 40px 0 0;
     }
   }
-
-  &__line{
-    position:fixed;
-    width:100%;
-    height:27px;
-    background:url(../img/line-header.png) 0 0 no-repeat;
-    z-index: 100;
-    @include media(sp) {
-      top:-5px;
-      left:-5px;
-      z-index: 10;
-    }
-  }
 }
 
 
 //snsボタン
-.header .btn-group{
+.btn-group{
   position: absolute;
-  top: 50px;
-  left: 50px;
+  bottom: 50px;
+  right: 50px;
   z-index: 100;
 
   @include media(sp) {
@@ -44,11 +31,16 @@
   }
 }
 //バーガーメニュー
-.header .btn-burger{
+.btn-burger{
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: calc(50% + 150px);
+  right: calc(50% - 15px);
   z-index: 100;
+  transition: all .7s;
+
+  &--top {
+    top: 40px;
+  }
 
   @include media(sp) {
     top: 15px;

@@ -3,4 +3,25 @@
  arcives
  */
 
-.arcives
+.arcives__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  .arcive {
+    width: 100%;
+    margin: 0 0 40px 0;
+    @include media(tab){
+      width: calc((100% - 40px)/3);
+    }
+    .arcive__image {
+      img {
+        max-width: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover';
+      }
+    }
+    .arcive__body {
+
+    }
+  }
+}

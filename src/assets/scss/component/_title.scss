@@ -4,16 +4,15 @@
  */
 
 .title{
+  &--imgtxt {
+    span {
+      display: none;
+    }
+  }
   &--story {
     font-size: 16px;
     width: 17em;
     margin-bottom: 60px;
-    span {
-      display: none;
-    }
-    img {
-      max-width: 100%;
-    }
   }
   &--story-eng {
     display: inline-block;
@@ -34,6 +33,31 @@
     }
     img {
       max-width: 100%;
+    }
+  }
+  &--archives {
+    width: 75%;
+    margin: auto;
+    padding: 100px 0;
+    @include media(tab) {
+      width: 50%;
+    }
+    @include media(pc) {
+      width: 28%;
+    }
+    span {
+      display: none;
+    }
+  }
+  &--about {
+    width: 75%;
+    margin: auto;
+    padding: 100px 0;
+    @include media(tab) {
+      width: 50%;
+    }
+    @include media(pc) {
+      width: 20%;
     }
   }
 }

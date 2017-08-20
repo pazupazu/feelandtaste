@@ -8,7 +8,7 @@
   margin: auto;
   padding: 0 20px;
   .arcive {
-    width: 100%;
+    width: calc((100% - 20px)/2);;
     margin: 0 0 40px 0;
     @include media(tab){
       width: calc((100% - 40px)/3);

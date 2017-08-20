@@ -4,9 +4,13 @@
  */
 
 .title{
+  margin: 0;
   &--imgtxt {
     span {
       display: none;
+    }
+    img {
+      max-width: 100%;
     }
   }
   &--story {
@@ -38,12 +42,14 @@
   &--archives {
     width: 75%;
     margin: auto;
-    padding: 100px 0;
+    padding: 40px 0;
     @include media(tab) {
       width: 50%;
+      padding: 60px 0;
     }
     @include media(pc) {
       width: 28%;
+      padding: 100px 0;
     }
     span {
       display: none;
@@ -59,6 +65,10 @@
     @include media(pc) {
       width: 20%;
     }
+  }
+  &--footer-logo {
+    width: 215px;
+    margin-bottom: 30px;
   }
 }
 

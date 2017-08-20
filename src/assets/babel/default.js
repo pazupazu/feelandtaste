@@ -63,13 +63,15 @@ $(document).ready(function() {
       'section12'
     ],
     scrollBar: true,
+    scrollOverflow: true,
+    fitToSection: false,
 
     onLeave: function(index, nextIndex, direction){
       var loadedSection = $(this);
       if(nextIndex >= 2){
-        $(".btn-burger").addClass("btn-burger--top");
+        $('.btn-burger').addClass('btn-burger--top');
       } else {
-        $(".btn-burger").removeClass("btn-burger--top");
+        $('.btn-burger').removeClass('btn-burger--top');
       }
     }
   });

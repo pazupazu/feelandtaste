@@ -28,18 +28,10 @@
     flex: 1;
     @include font-size(13);
     letter-spacing: .08em;
+    text-align: center;
     font-family: 'Droid Serif',"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
     @include media(sp) {
       @include font-size(10);
     }
   }
-
-}
-
-.index .footer{
-  position: fixed;
-  width:100%;
-  bottom:0;
-  left:0;
-  z-index:10;
 }

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+about
+ */
+
+.about__wrapper {
+  width: 100%;
+  padding: 0 140px;
+  background: #dfe1e4;
+}
+.about {
+  background: #caced1;
+  .about__body {
+    padding: 80px 64px 50px 80px;
+    .about__body__infomation {
+      margin-bottom: 30px;
+    }
+    .about__body__contact {
+      margin-bottom: 16px;
+    }
+    .about__contact {
+      display: inline-block;
+      padding: 12px 26px;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 24px;
+      font-style: italic;
+      letter-spacing: .4em;
+      transition: .3s;
+      &:hover {
+        background: #9cabb7;
+      }
+    }
+  }
+}

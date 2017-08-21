@@ -5,29 +5,15 @@
 
 
 .footer{
-  &__block{
-    display:flex;
-    align-items: center;
-    padding:0 0 12px 54px;
-    @include media(sp) {
-      padding:10px 20px;
-    }
-  }
-
-  &__logo{
-    width:83px;
-    margin:0 10px 0 0;
-    img{
-      max-width:100%;
-    }
-    @include media(sp) {
-      width:50px;
-    }
+  background: #78818E;
+  padding:12px 0 60px;
+  @include media(sp) {
+    padding:10px 20px;
   }
   &__copyright{
-    flex: 1;
     @include font-size(13);
     letter-spacing: .08em;
+    color: #3e495d;
     text-align: center;
     font-family: 'Droid Serif',"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
     @include media(sp) {

@@ -6,7 +6,7 @@
 global.$ = global.jQuery = require("jquery");
 
 import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
-import objectFitImages from 'object-fit-images';
+import objectFitImages from 'object-fit-images'
 
 $(document).ready(function() {
   //page top
@@ -48,6 +48,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
+
     anchors:[
       'section1',
       'section2',
@@ -63,8 +64,6 @@ $(document).ready(function() {
       'section12'
     ],
     scrollBar: true,
-    scrollOverflow: true,
-    fitToSection: false,
 
     onLeave: function(index, nextIndex, direction){
       var loadedSection = $(this);
@@ -75,4 +74,17 @@ $(document).ready(function() {
       }
     }
   });
+
+  $(window).on('load resize', function () {
+    responsive();
+  });
+
+  function responsive() {
+    var w = $(window).width();
+    if ( w <= 768 ) {
+      $.fn.fullpage.setResponsive(true);
+    } else {
+      $.fn.fullpage.setResponsive(false);
+    }
+  }
 });

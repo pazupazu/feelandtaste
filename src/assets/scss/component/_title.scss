@@ -58,7 +58,7 @@
   &--about {
     width: 75%;
     margin: auto;
-    padding: 100px 0;
+    align-self: center;
     @include media(tab) {
       width: 50%;
     }

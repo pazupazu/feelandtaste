@@ -2,14 +2,21 @@
 /*
 about
  */
-
+.section.section--about {
+  .fp-tableCell {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about__wrapper {
   width: 100%;
   padding: 0 140px;
   background: #dfe1e4;
+  flex: 0 0 65%;
 }
 .about {
   background: #caced1;
+  height: 100%;
   .about__body {
     padding: 80px 64px 50px 80px;
     .about__body__infomation {

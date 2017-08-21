@@ -6,9 +6,19 @@
 
 
  // ベース
- .section {
-   //
+ .fp-responsive .fp-auto-height-responsive.fp-section,
+ .fp-responsive .fp-auto-height-responsive .fp-slide,
+ .fp-responsive .fp-auto-height-responsive .fp-tableCell {
+     height: auto !important;
  }
+ 
+.section,
+.fp-section {
+  .fp-tableCell {
+    display: block;
+  }
+}
+
 .section--df {
 }
  // 個別

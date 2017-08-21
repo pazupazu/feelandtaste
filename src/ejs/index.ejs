@@ -12,7 +12,7 @@ var data = {
   <% include module/_header %>
     
   <div id="fullpage">
-    <div class="section section--1 section--top">
+    <div class="section section--1 section--top fp-auto-height-responsive">
       <div class="logo__wrapper">
         <h1 class="logo"><a href="index.html"><img src="assets/image/logo.png" alt="secours"></a></h1>
       </div><!-- /.logo__wrapper -->
@@ -34,7 +34,7 @@ var data = {
       <img src="assets/image/IMAGE3.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--4 -->
 
-    <div class="section section--5 section--story">
+    <div class="section section--5 section--story fp-auto-height-responsive">
       <div class="story">
         <h2 class="title title--imgtxt title--story">
           <span>FEEL AND TASTE 感じること、味わうこと</span>
@@ -125,7 +125,7 @@ var data = {
       </div>
     </div><!-- /.section--7 -->
 
-    <div class="section section--8 section--new-collection">
+    <div class="section section--8 section--new-collection fp-auto-height-responsive">
       <div class="image-wide">
         <img src="assets/image/ph2.jpg" alt="">
       </div>
@@ -147,7 +147,7 @@ var data = {
       </div>
     </div><!-- /.section--9 -->
 
-    <div class="section section--10 section--archives fp-auto-height">
+    <div class="section section--10 section--archives fp-auto-height-responsive">
       <h2 class="title title--imgtxt title--archives">
         <span>archives</span>
         <img class="image-mw100" src="assets/image/title-archives.png" alt="archives">
@@ -181,7 +181,7 @@ var data = {
     </div><!-- /.section--10 -->
 
     <!-- ↓opne時非表示 -->
-    <div class="section section--11 section--archives fp-auto-height">
+    <div class="section section--11 section--archives fp-auto-height-responsive">
       <div class="arcives__wrapper row row--item-sb">
         <div class="arcive">
           <div class="arcive__image"><img src="assets/image/edition03.jpg" alt=""></div>
@@ -223,11 +223,11 @@ var data = {
     </div><!-- /.section--11 -->
     <!-- ↑opne時非表示 -->
 
-    <div class="section section--12 section--about">
-      <h2 class="title title--imgtxt title--about">
-        <span>about</span>
-        <img class="image-mw100" src="assets/image/title-about.png" alt="about">
-      </h2><!-- /.title--about -->
+    <div class="section section--12 section--about fp-auto-height-responsive">
+        <h2 class="title title--imgtxt title--about">
+          <span>about</span>
+          <img class="image-mw100" src="assets/image/title-about.png" alt="about">
+        </h2><!-- /.title--about -->
       <div class="about__wrapper">
         <div class="about">
           <div class="about__body">
@@ -249,10 +249,12 @@ var data = {
             </a>
           </div><!-- /.about__body -->
         </div><!-- /.about -->
+        
       </div><!-- /.about__wrapper -->
+      <% include module/_footer %>
     </div><!-- /.section--12 -->
   </div>
 
-  <% include module/_footer %>
+  
 </body>
 </html>

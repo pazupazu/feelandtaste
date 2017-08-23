@@ -13,12 +13,20 @@ about
   padding: 0 140px;
   background: #dfe1e4;
   flex: 0 0 65%;
+  @include media(sp) {
+    padding: 0 18px;
+  }
 }
 .about {
+  display: flex;
   background: #caced1;
   height: 100%;
+  padding: 80px 64px 50px 80px;
+  @include media(sp) {
+    padding: 30px 25px 20px;
+  }
   .about__body {
-    padding: 80px 64px 50px 80px;
+    
     .about__body__infomation {
       margin-bottom: 30px;
     }
@@ -37,6 +45,17 @@ about
       &:hover {
         background: #9cabb7;
       }
+    }
+  }
+
+  .about__misc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include media (sp) {
+      display: none;
     }
   }
 }

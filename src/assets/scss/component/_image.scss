@@ -10,6 +10,9 @@ img {
   height: 100%;
   object-fit: cover;
   font-family: 'object-fit: cover';
+  @include media(sp){
+    height: auto;
+  }
 }
 
 .image-wide {

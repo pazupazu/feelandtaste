@@ -20,11 +20,6 @@
 
 //snsボタン
 .btn-group{
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  z-index: 100;
-
   @include media(sp) {
     display:none !important;
   }

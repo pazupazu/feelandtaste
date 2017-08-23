@@ -22,15 +22,15 @@ var data = {
       </div><!-- /.btn-group -->
     </div><!-- /.section--1 -->
 
-    <div class="section section--2">
+    <div class="section section--2 fp-auto-height-responsive">
       <img src="assets/image/IMAGE1.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--2 -->
 
-    <div class="section section--3">
+    <div class="section section--3 fp-auto-height-responsive">
       <img src="assets/image/IMAGE2.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--3 -->
 
-    <div class="section section--4">
+    <div class="section section--4 fp-auto-height-responsive">
       <img src="assets/image/IMAGE3.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--4 -->
 
@@ -120,8 +120,10 @@ var data = {
       <div class="image-wide">
         <img src="assets/image/ph1.jpg" alt="">
       </div>
-      <div>
-        <a href="#section1">top</a>
+      <div class="btn-top__wrapper full">
+        <div class="btn-top">
+          <a class="btn-top__anchor" href="#section1">top</a>
+        </div>
       </div>
     </div><!-- /.section--7 -->
 
@@ -248,8 +250,19 @@ var data = {
               contact
             </a>
           </div><!-- /.about__body -->
+          <div class="about__misc">
+              <div class="btn-group">
+                <a class="btn-sns btn-sns--facebook" href="https://www.facebook.com/Miutt.world/" target="_blank">FB</a>
+                <a class="btn-sns btn-sns--inst" href="https://www.instagram.com/miuttofficialaccount/" target="_blank">INST</a>
+              </div><!-- /.btn-group -->
+            <div class="btn-top__wrapper">
+              <div class="btn-top">
+                <a class="btn-top__anchor" href="#section1">top</a>
+              </div>
+            </div>
+          </div><!-- /.about__misc -->
+          
         </div><!-- /.about -->
-        
       </div><!-- /.about__wrapper -->
       <% include module/_footer %>
     </div><!-- /.section--12 -->

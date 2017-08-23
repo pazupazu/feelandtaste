@@ -27,7 +27,7 @@
     border-bottom: 1px solid #fff;
   }
   &--new-collection {
-    width: 75%;
+    width: 307px;
     margin: 40px auto;
     @include media(tab) {
       width: 50%;
@@ -40,7 +40,7 @@
     }
   }
   &--archives {
-    width: 75%;
+    width: 193px;
     margin: auto;
     padding: 40px 0;
     @include media(tab) {
@@ -56,8 +56,9 @@
     }
   }
   &--about {
-    width: 75%;
+    width: 120px;
     margin: auto;
+    padding: 20px 0;
     align-self: center;
     @include media(tab) {
       width: 50%;

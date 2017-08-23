@@ -22,6 +22,12 @@ $(document).ready(function() {
   $(".js-hook-menu").on("click", function() {
     $(".btn-burger__icon").toggleClass("btn-burger__icon--close");
     $(".gloval-nav").toggleClass("gloval-nav--open");
+
+    if($(".btn-burger").hasClass('btn-burger--top')){
+      $('.btn-burger').removeClass('btn-burger--top');
+    } else {
+      $('.btn-burger').addClass('btn-burger--top');
+    }
   });
 
   var headH = $(".header .header__inner").height();
@@ -75,7 +81,7 @@ $(document).ready(function() {
     }
   });
 
-  $(window).on('resize', function () {
+  $(window).on('load resize', function () {
     responsive();
   });
 

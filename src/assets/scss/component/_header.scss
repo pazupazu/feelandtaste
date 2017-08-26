@@ -42,6 +42,9 @@
   }
 }
 
-.page--contact .btn-burger{
-  top: 40px;
+.page--contact .btn-burger,
+.page--edition .btn-burger{
+  @include media(pc) {
+    top: 40px;
+  }
 }

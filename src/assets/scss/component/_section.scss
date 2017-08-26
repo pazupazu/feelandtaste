@@ -18,9 +18,6 @@
     display: block;
   }
 }
-
-.section--df {
-}
  // 個別
 .section--top {
   .logo__wrapper {
@@ -81,7 +78,11 @@
     padding-top: 55px;
   }
 }
-
+.section--archives-continuance {
+  .arcives__wrapper {
+    padding: 120px 0 0;
+  }
+}
 .section--more {
   padding-top: 120px;
   @include media(sp){

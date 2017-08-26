@@ -1,0 +1,39 @@
+/*
+edition
+*/
+.edition__top {
+  display: flex;
+  @include media(sp){
+    flex-direction: column-reverse;
+  }
+}
+.edition__image {
+  flex: 0 0 70%;
+  padding-left: 120px;
+  @include media(sp){
+    padding-left: 0;
+  }
+}
+.edition__body {
+  flex: 0 0 30%;
+  padding: 60px 40px 0 80px;
+  @include media(sp){
+    padding: 80px;
+  }
+  .logo {
+    width: auto;
+    margin-bottom: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .title {
+    display: inline-block;
+    padding: 0 4px;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #000;
+  }
+}

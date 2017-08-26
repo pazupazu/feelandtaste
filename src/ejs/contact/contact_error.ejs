@@ -21,84 +21,43 @@
 <meta content="miutt" property="og:site_name" />
 
 <link href="../assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-
+<script type="text/javascript" src="../assets/js/default.js"></script>
 </head>
 
-<body>
+<body class="page--contact"
 
 <% include ../module/_header %>
 
-<div class="section">
-<div class="section__block--short">
+<div class="contact__container">
+    <div class="section section--error">
+    <h2 class="title title--secondary">ご入力内容に誤りがあります</h2>
+    <form method="post" action="" name="form00" id="form00">
+    <div class="form">
+    <!-- 確認 -->
+        <div class="form__item form-input">
+            <p class="text text-sm text--pd text--label">お名前／会社名</p>
+            <p class="text text-lg text--pd">_#Name <span class="text--red">_#NamError</span></p>
+        </div>
+    
+        <div class="form__item form-input">
+            <p class="text text-sm text--pd text--label">メールアドレス</p>
+            <p class="text text-lg text--pd">_#Email <span class="text--red">_#EmError</span></p>
+        </div>
+    
+        <div class="form__item form-textarea-re">
+            <p class="text text-sm text--pd text--label">お問い合わせ内容・ご質問などをご記入ください</p>
+            <p class="text text-lg text--pd">_#Etc <span class="text--red">_#EtError</span></p>
+        </div>
+    
+        <div class="form__item form-btn">
+            <input type="reset" name="reset" onclick="history.back()" value="戻る / BACK">
+        </div>
+    <!-- 確認 -->
+    </div><!-- /.form -->
+    </form>
+    </div><!-- /.section -->
 
-    <div class="page-header">
-        <h1 class="title--primary">CONTACT</h1>
-    </div>
-
-</div><!-- /.section__block -->
-</div><!-- /.section -->
-
-<div class="section">
-<div class="section__block--short">
-
-            <p class="text text-desc">
-ご入力内容に誤りがあります。
-            </p>
-
-</div><!-- /.section__block -->
-</div><!-- /.section -->
-
-<div class="section">
-<div class="section__block--short">
-
-<form method="post" action="" name="form00" id="form00">
-
-<div class="form">
-
-<!-- 確認 -->
-    <div class="form__item form-input">
-        <p class="text text-sm text--pd"><span class="text--red">＊</span>お名前</p>
-        <p class="text text-lg text--pd">_#Name <span class="text--red">_#NamError</span></p>
-    </div>
-
-    <div class="form__item form-input">
-        <p class="text text-sm text--pd">会社名</p>
-        <p class="text text-lg text--pd">_#Company <span class="text--red">_#CompError</span></p>
-    </div>
-
-    <div class="form__item form-input">
-        <p class="text text-sm text--pd"><span class="text--red">＊</span>メールアドレス</p>
-        <p class="text text-lg text--pd">_#Email <span class="text--red">_#EmError</span></p>
-    </div>
-
-    <div class="form__item form-radio">
-        <p class="text text-sm">お問い合わせの項目<span class="text--red">＊</span>（どれか１つを選択してください）</p>
-        <p class="text text-lg">_#Item <span class="text--red">_#ItError</span></p>
-    </div>
-
-    <div class="form__item form-textarea-re">
-        <p class="text text-sm text--pd">お問い合わせ内容・ご質問などをご記入ください<span class="text--red">＊</span><br>（お取引に関する場合は店名もお書き添えください）</p>
-        <p class="text text-lg text--pd">_#Etc <span class="text--red">_#EtError</span></p>
-    </div>
-
-    <div class="form__item form-btn">
-        <input type="reset" name="reset" onclick="history.back()" value="戻る / BACK">
-    </div>
-
-<!-- 確認 -->
-
-
-</div><!-- /.form -->
-
-</form>
-
-</div><!-- /.section__block -->
-</div><!-- /.section -->
-
-
-
+</div>
 <% include ../module/_footer %>
-
-    <script type="text/javascript" src="../assets/js/default.js"></script>
 </body>
 </html>

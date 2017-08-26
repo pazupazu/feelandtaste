@@ -4,7 +4,16 @@
  */
 
 .title{
-  margin: 0;
+  margin: 0 auto;
+  &--primary {
+
+  }
+  &--secondary {
+    font-weight: 400;
+    letter-spacing: .2em;
+    margin: 1em 0 1.5em;
+  }
+
   &--imgtxt {
     span {
       display: none;
@@ -70,6 +79,10 @@
   &--footer-logo {
     width: 215px;
     margin-bottom: 30px;
+  }
+  &--contact {
+    width: 264px;
+    margin-bottom: 40px;
   }
 }
 

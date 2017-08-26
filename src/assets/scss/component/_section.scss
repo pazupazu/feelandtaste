@@ -34,7 +34,7 @@
   width: 96%;
   height: 100%;
   margin: auto;
-  padding: 80px 20px;
+  padding: 20px 20px 0;
   background: #dbdedf;
   @include media(tab) {
     padding: 80px 40px;
@@ -63,20 +63,46 @@
 .section--story-eng-continuance {
   .story {
     height: auto;
-    margin-bottom: 80px;
+    padding: 0 20px 20px;
+    margin-bottom: 0;
+    @include media(tab) {
+      padding: 80px 40px;
+    }
+    @include media(pc) {
+      padding: 120px 120px 80px 120px;
+      margin-bottom: 80px;
+    }
   }
 }
 
 .section--new-collection {
   padding-top: 120px;
+  @include media(sp){
+    padding-top: 55px;
+  }
 }
 
 .section--more {
   padding-top: 120px;
+  @include media(sp){
+    padding-top: 60px;
+  }
   .more {
     padding: 20px 80px 20px;
     background: #d6d3d3;
-    .more__text {
+    @include media(sp){
+      padding: 20px;
+      justify-content: center;
+    }
+    .col.l1 {
+      padding: 20px 0 5px;
+    }
+    .more__anchor {
+      display: inline-block;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-style: italic;
+      letter-spacing: .4em;
     }
   }
 }

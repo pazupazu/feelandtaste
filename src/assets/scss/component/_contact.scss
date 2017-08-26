@@ -3,4 +3,27 @@
   contact
  */
 
- 
+ .page--contact {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   .contact__container {
+    flex-grow: 1;
+   }
+  .section {
+    max-width: 640px;
+    padding: 120px 0 0;
+    margin: auto;
+    .text {
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: .05em;
+    }
+  }
+  .section--form {
+    padding: 0 0 44px;
+  }
+  .section--thx {
+    padding: 120px 0 70px;
+  }
+ }

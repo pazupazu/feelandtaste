@@ -18,23 +18,14 @@
       display: block;
       background-color: transparent;
       @include font-size(16);
-      padding: 22px 15px 10px;
+      padding: 22px 10px 10px;
       outline: none;
       letter-spacing: 1px;
       max-width: 100%;      
     }
     ::-webkit-input-placeholder {
-      color: #000;
+      color: #336699;
       font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-    }
-    &.need:before{
-      content: '*';
-      display:inline-block;
-      position:absolute;
-      @include font-size(16);
-      top:6px;
-      left:3px;
-      color:#ff3399;
     }
   }
 
@@ -66,8 +57,7 @@
       border: none;
       display: block;
       width:100%;
-      border-bottom:1px solid #999;
-      background: #ededed;
+      border:1px solid #999;
     }
 
     &-re{
@@ -79,15 +69,23 @@
     margin:40px 0 0;
     text-align: center;
 
-    input{
+    input,
+    .form-btn-anchor {
       display: inline-block;
       @include font-size(16);
       color: #000;
       background-color: #ececec;
-      border: 1px solid #000;
+      border: 1px solid #949494;
       padding: 20px 30px;
-      letter-spacing: 2px;
+      margin: 0 10px;
+      letter-spacing: .2em;
       font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+      cursor: pointer;
+      transition: .2s;
+      &:hover {
+        color: #fff;
+        background: #62798c;
+      }
       @include media(sp) {
        width: 80%;
        margin:0 0 10px;

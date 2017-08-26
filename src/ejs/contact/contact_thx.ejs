@@ -1,59 +1,34 @@
-
-<!DOCTYPE html>
-<html>
-<!--[if lt IE 9]><html class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
-<head>
-<title>CONTACT / Miutt</title>
-<meta charset="SHIFT-JIS"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="keywords" content="キーワード" />
-<meta name="description" content="ディスクリプション" />
-<meta id="dviewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;">
-
-<link rel="shortcut icon" href="miutt.ico" type="image/ico" />
-
-<meta content="miutt" property="og:title" />
-<meta content="article" property="og:type" />
-<meta content="" property="og:url" />
-<meta content="#" property="og:image" />
-<meta content="" />
-<meta content="miutt" property="og:site_name" />
-
-<link href="../assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-
-</head>
-
-<body>
+<%
+var data = {
+  title: '問い合わせ FEEL AND TASTE',
+  keyword: 'FEEL AND TASTE,カバン,通販',
+  desc: 'contact FEEL AND TASTE description'
+};
+%>
+<% include ../module/_head %>
+<body class="page--contact">
 
 <% include ../module/_header %>
-
-<div class="section">
-<div class="section__block--short">
-
-    <div class="page-header">
-        <h1 class="title--primary">CONTACT</h1>
+<div class="contact__container">
+    <!-- thanks -->
+    <div class="section section--thx">
+        <h2 class="title--secondary">お問い合せありがとうございました</h2>
+        <p class="text text-desc">
+            お問い合わせ内容は、<br>
+            ご入力いただいたメールアドレス宛てに控えとしてお送りしています。<br>
+            お問い合わせの内容により、<br>
+            ご連絡までにお時間をいただく場合がございます。<br>
+            あらかじめご了承いただけますようお願い申し上げます。<br>
+            ご利用ありがとうございました。
+        </p>
+    </div><!-- /.section -->
+    <!-- thanks -->
+    <div class="section section--close">
+        <div class="form-btn">
+            <a class="form-btn-anchor" href="javascript:window.open('about:blank','_self').close();">閉じる ／ CLOSE</a>
+        </div>
     </div>
-
-</div><!-- /.section__block -->
-</div><!-- /.section -->
-
-
-
-<!-- thanks -->
-<div class="section">
-<div class="section__block--short">
-    <h2 class="title--secondary">お問い合せありがとうございました</h2>
-    <p class="text text-desc">
-お問い合わせ内容は、<br>
-ご入力いただいたメールアドレス宛てに控えとしてお送りしています。<br>
-お問い合せから２営業日お返事がない場合は、<br>
-届いていない場合がありますので、お手数ですが再度お問い合せください。
-    </p>
-
-</div><!-- /.section__block -->
-</div><!-- /.section -->
-<!-- thanks -->
+</div>
 
 
 <% include ../module/_footer %>

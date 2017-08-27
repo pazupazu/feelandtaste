@@ -8,15 +8,26 @@ global.$ = global.jQuery = require("jquery");
 import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
 import objectFitImages from 'object-fit-images'
 
+$(window).on('load resize', function () {
+  responsive();
+});
+
+function responsive() {
+  var w = $(window).width();
+  if ( w <= 768 ) {
+    $.fn.fullpage.setResponsive(true);
+  } else {
+    $.fn.fullpage.setResponsive(false);
+  }
+}
+
 $(document).ready(function() {
   //page top
-  // $('.btn-top').on("click", function() {
-  //   console.log('OK');
-  //   $('body,html').animate({
-  //     scrollTop: 0
-  //   }, 500);
-    
-  // });
+  $('.btn-top').on("click", function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+  });
 
   //バーガーメニュー 開閉
   $(".js-hook-menu , .gloval-nav__item").on("click", function() {
@@ -75,17 +86,4 @@ $(document).ready(function() {
       }
     }
   });
-
-  $(window).on('load resize', function () {
-    responsive();
-  });
-
-  function responsive() {
-    var w = $(window).width();
-    if ( w <= 768 ) {
-      $.fn.fullpage.setResponsive(true);
-    } else {
-      $.fn.fullpage.setResponsive(false);
-    }
-  }
 });

@@ -18,7 +18,9 @@
 
   &.open {
     .btn-burger {
-      top: 40px;
+      @include media(pc) {
+        top: 40px;
+      }
     }
   }
 }

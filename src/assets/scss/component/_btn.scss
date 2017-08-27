@@ -50,35 +50,15 @@
   sns
  */
 .btn-sns{
-  display:inline-block;
-  
-
-  &--facebook,
-  &--inst{
-    background-position:0 0;
-    background-repeat: no-repeat;
-    transition:0.5s;
+  font-size: 26px;
+  color: #fff;
+  margin-right: 35px;
+  transition: .2s;
+  &:last-child {
+    margin-right: 0;
   }
-
-  &--facebook{
-    width:35px;
-    height:35px;
-    margin:0 15px 0 0;
-    background-image:url(../img/btn_facebook.png);
-    background-size: 35px auto;
-    &:hover{
-      background-image:url(../img/btn_facebook--h.png);
-    }
-  }
-  &--inst{
-    width:35px;
-    height:35px;
-    margin:0 12px 0 0;
-    background-image:url(../img/btn_inst.png);
-    background-size: 35px auto;
-    &:hover{
-      background-image:url(../img/btn_inst--h.png);
-    }
+  &:hover {
+    color: #62798c;
   }
 }
 

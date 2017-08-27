@@ -15,17 +15,8 @@
   text-align: center;
   transition: 0.3s;
   overflow-y: auto;
-  background: #ccc;
+  background: #98a7b3;
   opacity: 0;
-
-  @include media(sp) {
-    visibility: hidden;
-    opacity: 0;
-    left:0;
-    width:100%;
-    background:#e2e2e2;
-//    background: rgba(255,255,255,0.8);
-  }
 
   &__inner{
     padding:130px 0 0 0;
@@ -41,7 +32,8 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height:1.2;
-    letter-spacing: 0.2rem;
+    letter-spacing: .2em;
+    text-indent: .3em;
     color:#fff;
     transition: .2s;
 

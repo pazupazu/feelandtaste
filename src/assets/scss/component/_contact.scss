@@ -11,14 +11,20 @@
     flex-grow: 1;
    }
   .section {
-    max-width: 640px;
-    padding: 120px 20px 0;
+    max-width: 680px;
+    padding: 40px 20px 0;
     margin: auto;
+    @include media (pc) {
+      padding: 120px 20px 0;
+    }
     .text {
       font-size: 15px;
       line-height: 2;
       letter-spacing: .05em;
     }
+  }
+  .section--title {
+    padding: 120px 20px 0;
   }
   .section--form {
     padding: 0 20px 44px;

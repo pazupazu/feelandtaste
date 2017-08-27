@@ -23,7 +23,7 @@ var error = function(err) {
 var ejs = require('gulp-ejs');
 gulp.task("ejs", function() {
     gulp.src(
-        [paths.ejs + "**/*.ejs", '!' + paths.ejs + "**/_*.ejs"]
+        [paths.ejs + "**/*.ejs", '!' + paths.ejs + "**/_*.ejs", '!' + paths.ejs + "contact/*.ejs"]
     )
     .pipe(plumber())
     .pipe(ejs())

@@ -38,12 +38,6 @@
   &--new-collection {
     width: 307px;
     margin: 40px auto;
-    @include media(tab) {
-      width: 50%;
-    }
-    @include media(pc) {
-      width: 33%;
-    }
     img {
       max-width: 100%;
     }
@@ -53,11 +47,9 @@
     margin: auto;
     padding: 40px 0;
     @include media(tab) {
-      width: 50%;
       padding: 60px 0;
     }
     @include media(pc) {
-      width: 28%;
       padding: 100px 0;
     }
     span {
@@ -69,12 +61,6 @@
     margin: auto;
     padding: 20px 0;
     align-self: center;
-    @include media(tab) {
-      width: 50%;
-    }
-    @include media(pc) {
-      width: 20%;
-    }
   }
   &--footer-logo {
     width: 215px;

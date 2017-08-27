@@ -18,7 +18,7 @@
 
   &.open {
     .btn-burger {
-      @include media(pc) {
+      @include media(tab) {
         top: 40px;
       }
     }
@@ -52,7 +52,7 @@
 
 .page--contact .btn-burger,
 .page--edition .btn-burger{
-  @include media(pc) {
+  @include media(tab) {
     top: 40px;
   }
 }

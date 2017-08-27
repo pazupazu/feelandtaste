@@ -5,16 +5,18 @@
 */
 
 .gloval-nav{
+  display: none;
   position: absolute;
-  top: -110vh;
+  top: 0;
   left: 0;
-  width:100%;
+  width:100vw;
   height:100vh;
   padding:0;
   text-align: center;
   transition: 0.3s;
   overflow-y: auto;
   background: #ccc;
+  opacity: 0;
 
   @include media(sp) {
     visibility: hidden;
@@ -36,10 +38,12 @@
     display:block;
     padding: 0 0 40px 0;
     @include font-size(24);
-    font-family: 'Droid Serif';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     line-height:1.2;
     letter-spacing: 0.2rem;
-    color:#7185a0;
+    color:#fff;
+    transition: .2s;
 
     @include media(sp) {
       text-align: center;
@@ -47,7 +51,7 @@
     }
 
     &:hover{
-      color:#000;
+      color:#62798c;
     }
     &:visited{
       //color:#7185a0;
@@ -57,9 +61,24 @@
   //状態変化 ベースクラス名並記 .gloval-navが必要
   // メニューオープン
   &--open{
-    top: 0;
-    @include media(sp) {
-      visibility: visible;
+    display: block;
+    opacity: 1;
+    animation: fade-in .7s;
+  }
+
+  @keyframes fade-in {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: block;
       opacity: 1;
     }
   }

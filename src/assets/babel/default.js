@@ -19,15 +19,10 @@ $(document).ready(function() {
   // });
 
   //バーガーメニュー 開閉
-  $(".js-hook-menu").on("click", function() {
+  $(".js-hook-menu , .gloval-nav__item").on("click", function() {
     $(".btn-burger__icon").toggleClass("btn-burger__icon--close");
     $(".gloval-nav").toggleClass("gloval-nav--open");
-
-    if($(".btn-burger").hasClass('btn-burger--top')){
-      $('.btn-burger').removeClass('btn-burger--top');
-    } else {
-      $('.btn-burger').addClass('btn-burger--top');
-    }
+    $(".header").toggleClass("open");
   });
 
   var headH = $(".header .header__inner").height();

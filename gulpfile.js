@@ -81,7 +81,7 @@ gulp.task('js', watchify(function(watchify) {
             bundle.transform(babelify, {presets: "es2015"})
         }
     }))
-    .pipe(streamify(uglify()))
+    // .pipe(streamify(uglify()))
     .pipe(streamify(sourcemaps.write()))
     .pipe(chmod(755))
     .pipe(gulp.dest(paths.js))

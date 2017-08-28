@@ -167,6 +167,10 @@
   border-left: 1px solid #fff;
   cursor: pointer;
   transition: .2s;
+  @include media(sp){
+    width: 48px;
+    height: 48px;
+  }
   &:hover {
     border-top: 1px solid #333;
     border-left: 1px solid #333;
@@ -177,12 +181,17 @@
   .btn-top__anchor {
     display: inline;
     margin-top: -12px;
-    margin-left: -4px;
     transform: rotate(-45deg);
     color: #fff;
     font-style: italic;
     letter-spacing: .4em;
+    text-indent: -.4em;
     transition: .2s;
+    @include media(sp){
+      font-size: 13px;
+      letter-spacing: .28em;
+      text-indent: -.28em;
+    }
   }
 }
 

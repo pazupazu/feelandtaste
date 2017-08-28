@@ -19,7 +19,7 @@
   &.open {
     .btn-burger {
       @include media(tab) {
-        top: 40px;
+        top: 28px;
       }
     }
   }
@@ -35,7 +35,7 @@
 //バーガーメニュー
 .btn-burger{
   position: absolute;
-  top: calc(50vh + 130px);
+  top: calc(50vh + 150px);
   right: calc(50% - 15px);
   z-index: 100;
   transition: all .7s;

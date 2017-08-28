@@ -24,8 +24,12 @@
   }
   &--story {
     font-size: 16px;
-    width: 17em;
-    margin: 0 0 48px;
+    width: 254px;
+    margin: 0 0 25px;
+    @include media(tab) {
+      margin: 0 0 48px;
+      width: 17em;
+    }
   }
   &--story-eng {
     display: inline-block;
@@ -34,11 +38,20 @@
     color: #ffffff;
     font-style: italic;
     border-bottom: 1px solid #fff;
-    letter-spacing: 0.06em
+    letter-spacing: 0.06em;
+    @include media(sp) {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
   }
   &--new-collection {
     width: 454px;
-    margin: 50px auto 0;
+    margin:auto;
+    padding: 50px 0 0;
+    @include media (sp) {
+      max-width: 305px;
+      padding: 40px 0 0;
+    }
     img {
       max-width: 100%;
     }
@@ -46,7 +59,7 @@
   &--archives {
     width: 193px;
     margin: auto;
-    padding: 40px 0;
+    padding: 60px 0 45px;
     @include media(tab) {
       padding: 60px 0;
     }
@@ -63,6 +76,10 @@
     margin: 0 auto;
     padding: 160px 0 130px;
     align-self: center;
+    @include media (sp) {
+      width: 125px;
+      padding: 80px 0 20px;
+    }
   }
   &--footer-logo {
     width: 215px;

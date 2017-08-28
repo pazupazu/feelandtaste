@@ -26,8 +26,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media(sp) {
+      height: 95vh;
+    }
     .logo {
       margin: -50px 0 0;
+      @include media(sp) {
+        margin: -100px 0 0;
+        width: 72%;
+      }
     }
   }
   .btn-group {
@@ -43,12 +50,13 @@
   }
 }
 .story {
-  width: 1146px;
+  max-width: calc(100% - 32px);
   height: 100%;
   margin: auto;
-  padding: 20px 20px 0;
+  padding: 90px 10px 0;
   background: #dbdedf;
   @include media(tab) {
+    max-width: 1146px;
     padding: 80px 40px;
   }
   @include media(pc) {
@@ -57,14 +65,25 @@
   .story__body {
     padding: 0 0 0 8px;
     &--second {
-      padding: 0 0 0 68px;
+      @include media(pc) {
+        padding: 0 0 0 68px;
+      }
       .text {
         margin-bottom: 34px;
       }
     }
   }
   .text {
-    margin-bottom: 40px;
+    
+    margin-bottom: 30px;
+    @include media(sp) {
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.08em;
+    }
+    @include media(tab) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -81,10 +100,21 @@
       font-size: 17px;
       line-height: 28px;
       letter-spacing: 0.04em;
+      @include media(sp) {
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.08em;
+      }
     }
   }
 }
-
+.section--story-eng {
+  .story  {
+    @include media(sp){
+      padding: 30px 20px 0;
+    }
+  }
+}
 .section--story-eng-continuance {
   .story {
     height: auto;
@@ -110,7 +140,7 @@
   .arcives__wrapper {
     padding: 80px 20px 0;
     @include media(sp){
-      padding: 0 20px 20px;
+      padding: 0 10px 20px;
     }
   }
 }
@@ -136,6 +166,9 @@
       font-size: 30px;
       font-style: italic;
       letter-spacing: .36em;
+      @include media (sp) {
+        font-size: 25px;
+      }
       span:nth-child(1){
         letter-spacing: .3em;
       }
@@ -154,27 +187,44 @@
 
   .about__wrapper {
     width: 100%;
-    padding: 0 140px;
+    padding: 0 18px;
+    
     background: #dfe1e4;
-    @include media(sp) {
-      padding: 0 18px;
+    @include media(tab) {
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      padding: 0 140px;
     }
   }
   .about {
     display: flex;
     background: #caced1;
-    height: 100%;
-    padding: 80px 40px 50px 80px;
-    @include media(sp) {
-      padding: 30px 25px 20px;
+    padding: 30px 25px 20px;
+    @include media(tab) {
+      padding: 60px 25px 20px;
+    }
+    @include media(pc) {
+      padding: 80px 40px 50px 80px;
     }
     .about__body {
-      flex: 0 0 700px;
+      flex: 1;
+      @include media(tab) {
+        flex: 0 0 60%;
+      }
+      @include media(pc) {
+        flex: 0 0 700px;
+      }
       .text {
         font-size: 15px;
         line-height: calc(44 / 30);
         letter-spacing: 0.06em;
         color: #404549;
+        @include media(sp) {
+          font-size: 12px;
+          line-height: 1.5;
+          word-break: normal;
+        }
       }
       .about__body__infomation {
         margin-bottom: 30px;
@@ -191,6 +241,11 @@
         font-style: italic;
         letter-spacing: .4em;
         transition: .3s;
+        @include media(sp) {
+          font-size: 20px;
+          padding: 6px 20px;
+          letter-spacing: .28em;
+        }
         &:hover {
           background: #9cabb7;
         }

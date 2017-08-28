@@ -1,6 +1,3 @@
-# dist
-dist/
-
 # node.js modules
 node_modules/
 package-lock.json

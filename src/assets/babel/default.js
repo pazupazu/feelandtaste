@@ -15,7 +15,7 @@ $(window).on('load resize', function () {
 function responsive() {
   var w = $(window).width();
   var h = $(window).height();
-  if ( w <= 768 || h <= 880 ) {
+  if ( w <= 768) {
     $.fn.fullpage.setResponsive(true);
   } else {
     $.fn.fullpage.setResponsive(false);

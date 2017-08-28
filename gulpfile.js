@@ -51,7 +51,7 @@ gulp.task("scss", function() {
     .pipe(sass().on('error', sass.logError))
 
     .pipe(pleeease({ //最終的に対象バージョンに合わせて出力
-        autoprefixer: {"browsers": ["last 4 versions", "ios 6"]},
+        autoprefixer: {"browsers": ["last 4 versions"]},
         minifier: false,
         mqpacker: true
     }))

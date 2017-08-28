@@ -11,13 +11,17 @@
     padding:10px 20px;
   }
   &__copyright{
-    @include font-size(13);
-    letter-spacing: .08em;
+    font-size: 12px;
+    letter-spacing: .02em;
     color: #3e495d;
     text-align: center;
-    font-family: 'Droid Serif',"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
+    font-family: 'Droid Serif',"ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝";
     @include media(sp) {
       @include font-size(10);
     }
   }
+}
+
+.index .footer{
+  height: 100%;
 }

@@ -7,7 +7,7 @@
 .form{
   
   &__item{
-    margin:0 0 30px;
+    margin:0 0 16px;
   }
 
   &-input{
@@ -21,11 +21,11 @@
       padding: 22px 10px 10px;
       outline: none;
       letter-spacing: 1px;
-      max-width: 100%;      
+      width: 100%;   
     }
     ::-webkit-input-placeholder {
       color: #336699;
-      font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+      font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     }
   }
 
@@ -50,7 +50,7 @@
   }
 
   &-textarea{
-    margin:50px 0 30px;
+    margin:0 0 10px;
 
     textarea{
       margin:10px 0 0;
@@ -58,6 +58,7 @@
       display: block;
       width:100%;
       border:1px solid #999;
+      height: 120px;
     }
 
     &-re{
@@ -66,20 +67,20 @@
   }
 
   &-btn{
-    margin:40px 0 0;
+    margin:20px 0 44px;
     text-align: center;
 
     input,
     .form-btn-anchor {
       display: inline-block;
-      @include font-size(16);
+      font-size: 15px;
       color: #000;
       background-color: #ececec;
       border: 1px solid #949494;
-      padding: 20px 30px;
+      padding: 15px 30px;
       margin: 0 10px;
       letter-spacing: .2em;
-      font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+      font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
       cursor: pointer;
       transition: .2s;
       &:hover {

@@ -56,6 +56,11 @@
     <div class="section section--check">
         <h2 class="title--secondary">お問い合わせ内容の確認</h2>
         
+        <p class="text text-md text-desc">
+          ご入力いただいた内容でよろしければ「送信ボタン」、<br>
+          訂正される場合は「戻る」ボタンを押してください。 
+        </p>
+        
         <form method="post" action="contact.cgi" name="form00" id="form00">
         <input type=hidden name="お名前" value="_#Name">
         <input type=hidden name="E-mail" value="_#Email">
@@ -66,17 +71,17 @@
         <!-- 確認 -->
             <div class="form__item form-input">
                 <p class="text text-sm text--pd text--label">お名前／会社名(Name / Company Name)</p>
-                <p class="text text-lg text--pd">_#Name</p>
+                <p class="text text-lg text--pd text--inpud">_#Name</p>
             </div>
         
             <div class="form__item form-input">
                 <p class="text text-sm text--pd text--label">メールアドレス(e-mail)</p>
-                <p class="text text-lg text--pd">_#Email</p>
+                <p class="text text-lg text--pd text--inpud">_#Email</p>
             </div>
         
             <div class="form__item form-textarea-re">
                 <p class="text text-sm text--pd text--label">お問い合わせ内容・ご質問などをご記入ください (Please input an inquiry matter.)</p>
-                <p class="text text-lg text--pd">_#Etc</p>
+                <p class="text text-lg text--pd text--inpud text--area">_#Etc</p>
             </div>
         
             <div class="form__item form-btn">

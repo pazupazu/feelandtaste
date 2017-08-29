@@ -501,7 +501,8 @@ a {
     color: #333;
     transition: .2s; }
     .arcives__wrapper .arcive:hover .arcive__title {
-      color: #72798a; }
+      color: #72798a;
+      border-bottom: 1px solid #72798a; }
     .arcives__wrapper .arcive .arcive__image img {
       max-width: 100%;
       object-fit: cover;
@@ -674,14 +675,33 @@ a {
     margin: auto; }
     .page--contact .section .text {
       font-size: 15px;
-      line-height: 2;
-      letter-spacing: .05em; }
-  .page--contact .section--title {
-    padding: 120px 20px 0; }
+      line-height: 1.93;
+      letter-spacing: .04em; }
+  .page--contact .section--title,
+  .page--contact .section--check,
+  .page--contact .section--thx {
+    padding: 140px 20px 0; }
+  .page--contact .section--desc {
+    padding: 0 20px 10px; }
   .page--contact .section--form {
-    padding: 0 20px 44px; }
+    padding: 0 20px 0; }
+    .page--contact .section--form .text--inpud {
+      color: #336699; }
   .page--contact .section--thx {
     padding: 120px 20px 70px; }
+  .page--contact .section--check .text-desc {
+    margin-bottom: 60px; }
+  .page--contact .section--check .text-sm {
+    font-size: 12px;
+    line-height: 1.93;
+    letter-spacing: .08em; }
+  .page--contact .section--check .text--inpud {
+    color: #336699; }
+  .page--contact .section--check .text--area {
+    border: 1px solid #949494;
+    height: 120px; }
+  .page--contact .section--check .form-btn {
+    margin: 40px 0 44px; }
 
 /*
 edition
@@ -734,7 +754,7 @@ edition
   説明：form
  */
 .form__item {
-  margin: 0 0 30px; }
+  margin: 0 0 16px; }
 
 .form-input {
   position: relative;
@@ -749,10 +769,10 @@ edition
     padding: 22px 10px 10px;
     outline: none;
     letter-spacing: 1px;
-    max-width: 100%; }
+    width: 100%; }
   .form-input ::-webkit-input-placeholder {
     color: #336699;
-    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif; }
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif; }
 
 .form-radio {
   margin: 10px 0 0;
@@ -771,32 +791,31 @@ edition
         margin: 0 10px 0 0; }
 
 .form-textarea {
-  margin: 50px 0 30px; }
+  margin: 0 0 10px; }
   .form-textarea textarea {
     margin: 10px 0 0;
     border: none;
     display: block;
     width: 100%;
-    border: 1px solid #999; }
+    border: 1px solid #999;
+    height: 120px; }
   .form-textarea-re {
     margin: 20px 0; }
 
 .form-btn {
-  margin: 40px 0 0;
+  margin: 20px 0 44px;
   text-align: center; }
   .form-btn input,
   .form-btn .form-btn-anchor {
     display: inline-block;
-    font-size: 16px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
     color: #000;
     background-color: #ececec;
     border: 1px solid #949494;
-    padding: 20px 30px;
+    padding: 15px 30px;
     margin: 0 10px;
     letter-spacing: .2em;
-    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     cursor: pointer;
     transition: .2s; }
     .form-btn input:hover,
@@ -826,7 +845,7 @@ edition
     padding: 130px 0 0 0; }
   .gloval-nav__item {
     display: block;
-    padding: 0 0 40px 0;
+    padding: 0 0 36px 0;
     font-size: 24px;
     font-size: 24px;
     font-size: 1.5rem;
@@ -858,6 +877,8 @@ edition
     display: block;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }
+  .gloval-nav .btns {
+    padding: 20px 0 0; }
 
 /*
   grid
@@ -1180,9 +1201,10 @@ img {
 .title {
   margin: 0 auto; }
   .title--secondary {
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: .2em;
-    margin: 1em 0 1.5em; }
+    margin: 1em 0 1.3em; }
   .title--imgtxt span {
     display: none; }
   .title--imgtxt img {
@@ -1626,10 +1648,6 @@ img {
 }
 
 @media only screen and (min-width: 992px){
-
-  .page--contact .section{
-    padding: 120px 20px 0;
-  }
 
   .story{
     padding: 94px 120px 80px 112px;

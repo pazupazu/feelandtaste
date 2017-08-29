@@ -19,6 +19,7 @@
     &:hover {
       .arcive__title {
         color: #72798a;
+        border-bottom: 1px solid #72798a;
       }
     }
     @include media(tab){

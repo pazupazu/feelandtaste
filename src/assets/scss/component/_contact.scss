@@ -14,22 +14,47 @@
     max-width: 680px;
     padding: 40px 20px 0;
     margin: auto;
-    @include media (pc) {
-      padding: 120px 20px 0;
-    }
     .text {
       font-size: 15px;
-      line-height: 2;
-      letter-spacing: .05em;
+      line-height: 1.93;
+      letter-spacing: .04em;
     }
   }
-  .section--title {
-    padding: 120px 20px 0;
+  .section--title,
+  .section--check,
+  .section--thx {
+    padding: 140px 20px 0;
+  }
+  .section--desc {
+    padding: 0 20px 10px;
   }
   .section--form {
-    padding: 0 20px 44px;
+    padding: 0 20px 0;
+    .text--inpud {
+      color: #336699;
+    }
   }
   .section--thx {
     padding: 120px 20px 70px;
+  }
+  .section--check {
+    .text-desc {
+      margin-bottom: 60px;
+    }
+    .text-sm {
+      font-size: 12px;
+      line-height: 1.93;
+      letter-spacing: .08em;
+    }
+    .text--inpud {
+      color: #336699;
+    }
+    .text--area {
+      border: 1px solid #949494;
+      height: 120px;
+    }
+    .form-btn {
+      margin: 40px 0 44px;
+    }
   }
  }

@@ -8,22 +8,6 @@ global.$ = global.jQuery = require("jquery");
 import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
 import objectFitImages from 'object-fit-images'
 
-$(window).on('load resize', function () {
-  responsive();
-});
-
-function responsive() {
-  var w = $(window).width();
-  var h = $(window).height();
-  if ( w <= 768) {
-    $.fn.fullpage.setResponsive(true);
-    $.fn.fullpage.scrollOverflow(false);
-  } else {
-    $.fn.fullpage.setResponsive(false);
-    $.fn.fullpage.scrollOverflow(true);
-  }
-}
-
 $(document).ready(function() {
   //page top
   $('.btn-top').on("click", function() {
@@ -90,3 +74,15 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).on('load resize', function () {
+  responsive();
+});
+
+function responsive() {
+  var w = $(window).width();
+  var h = $(window).height();
+  if ( w <= 768) {
+    $.fn.fullpage.destroy('all');
+  }
+}

@@ -17,8 +17,10 @@ function responsive() {
   var h = $(window).height();
   if ( w <= 768) {
     $.fn.fullpage.setResponsive(true);
+    $.fn.fullpage.scrollOverflow(false);
   } else {
     $.fn.fullpage.setResponsive(false);
+    $.fn.fullpage.scrollOverflow(true);
   }
 }
 

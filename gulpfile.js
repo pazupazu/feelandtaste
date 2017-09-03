@@ -48,7 +48,7 @@ gulp.task("scss", function() {
 
     .pipe(sourcemaps.init())
     .pipe(sassGlob()) 
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 
     .pipe(pleeease({ //最終的に対象バージョンに合わせて出力
         autoprefixer: {"browsers": ["last 4 versions"]},

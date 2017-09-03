@@ -203,19 +203,24 @@
 .section--about {
   .fp-tableCell,
   .fp-scrollable {
-    height: 100vh !important;
+    @include media (pc) {
+      height: 100vh !important;
+    }
+    
   }
   .fp-scroller {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh !important;
+    @include media (pc) {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh !important;
+    }
   }
   .about__wrapper {
     width: 100%;
     padding: 0 18px;
     background: #dfe1e4;
     @include media(tab) {
-      padding: 0 60px;
+      padding: 0 40px;
     }
     @include media(pc) {
       padding: 0 140px;
@@ -225,7 +230,7 @@
     background: #caced1;
     padding: 30px 25px 20px;
     @include media(tab) {
-      padding: 60px 25px;
+      padding: 40px 25px;
     }
     @include media(pc) {
       padding: 80px 40px 50px 80px;

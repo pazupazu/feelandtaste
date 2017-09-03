@@ -12,6 +12,18 @@
 
 body{
   font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  @include media (sp) {
+    margin: 0;
+  }
+  @include media (tab) {
+    margin: 0;
+  }
+  @include media (pc) {
+    margin: 0;
+  }
+  @include media (wide) {
+    margin: 0;
+  }
 }
 
 a {

@@ -1567,6 +1567,10 @@ img {
 
 @media only screen and (max-width: 641px){
 
+  body{
+    margin: 0;
+  }
+
   .arcives__wrapper{
     padding: 0 10px;
   }
@@ -1829,15 +1833,11 @@ img {
   }
 }
 
-@media only screen and (min-width: 1200px){
-
-  .arcives__wrapper{
-    max-width: 1160px;
-    padding: 0 20px;
-  }
-}
-
 @media only screen and (min-width: 641px){
+
+  body{
+    margin: 0;
+  }
 
   .arcives__wrapper .arcive{
     width: calc((100% - 120px)/3);
@@ -1982,6 +1982,10 @@ img {
 
 @media only screen and (min-width: 992px){
 
+  body{
+    margin: 0;
+  }
+
   .gloval-nav__inner{
     padding: 130px 0 0 0;
   }
@@ -2028,6 +2032,18 @@ img {
   .title--about{
     width: 185px;
     padding: 145px 0 115px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+
+  body{
+    margin: 0;
+  }
+
+  .arcives__wrapper{
+    max-width: 1160px;
+    padding: 0 20px;
   }
 }
 

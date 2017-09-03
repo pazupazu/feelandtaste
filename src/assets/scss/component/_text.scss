@@ -29,8 +29,8 @@
     line-height: 1.6;
   }
   &-md{
-    @include font-size(15);
-    line-height: 2.133;
+    font-size: 0.875rem;
+    line-height: 1.85;
     letter-spacing: .04em;
   }
   &-lg{

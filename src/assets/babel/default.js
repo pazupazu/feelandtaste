@@ -76,8 +76,8 @@ $(document).ready(function() {
       'section11',
       'section12'
     ],
-    scrollBar: true,
-
+    scrollBar: false,
+    scrollOverflow: true,
     onLeave: function(index, nextIndex, direction){
       var loadedSection = $(this);
       if(nextIndex >= 2){

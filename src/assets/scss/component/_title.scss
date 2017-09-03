@@ -66,20 +66,23 @@
     }
     @include media(pc) {
       width: 270px;
-      padding: 160px 0 120px;
+      padding: 140px 0 80px;
     }
     span {
       display: none;
     }
   }
   &--about {
-    width: 185px;
+    width: 125px;
     margin: 0 auto;
-    padding: 160px 0 130px;
+    padding: 80px 0 20px;
     align-self: center;
-    @include media (sp) {
-      width: 125px;
-      padding: 80px 0 20px;
+    @include media (tab) {
+      padding: 80px 0 60px;
+    }
+    @include media (pc) {
+      width: 185px;
+      padding: 145px 0 115px;
     }
   }
   &--footer-logo {

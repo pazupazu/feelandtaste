@@ -4,11 +4,17 @@
  */
 
 .arcives__wrapper {
-  max-width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 40px;
   @include media (sp) {
     padding: 0 10px;
+  }
+  @include media (wide) {
+    max-width: 1160px;
+    padding: 0 20px;
   }
   .arcive {
     display: block;
@@ -22,8 +28,16 @@
         border-bottom: 1px solid #72798a;
       }
     }
+    @include media(sp) {
+      &:not(:nth-child(2n)) {
+        margin-right: 20px;
+      }
+    }
     @include media(tab){
       width: calc((100% - 120px)/3);
+      &:not(:nth-child(3n)) {
+        margin-right: 60px;
+      }
     }
     .arcive__image {
       img {

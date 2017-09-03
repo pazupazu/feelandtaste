@@ -15,8 +15,12 @@
   $bp-pc:      1200px;
   $bp-tab:      992px;
   $bp-sp:       641px;
-
-  @if $media-width == pc {
+  @if $media-width == wide {
+    @media only screen and (min-width: $bp-pc) {
+      @content;
+    }
+  }
+  @else if $media-width == pc {
     @media only screen and (min-width: $bp-tab) {
       @content;
     }

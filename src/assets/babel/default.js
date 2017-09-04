@@ -89,10 +89,10 @@ function responsive() {
   if ( w <= 768) {
     $.fn.fullpage.destroy('all');
   }
-  $('.section').css('height', height + 'px');
+  $('.index .section').css('height', height + 'px');
 
   if(window.innerHeight != height) {
     height = window.innerHeight;
-    $('.section').css('height', height + 'px');
+    $('.index .section').css('height', height + 'px');
   }
 }

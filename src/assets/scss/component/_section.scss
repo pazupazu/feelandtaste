@@ -134,10 +134,13 @@
   }
 }
 
-.section--new-collection {
-  padding-top: 94px;
-  @include media(sp){
-    padding-top: 55px;
+.section--new-collection,
+.section--more {
+  .image-wide {
+    padding-top: 94px;
+    @include media(sp){
+      padding-top: 55px;
+    }
   }
 }
 .section--archives-continuance {
@@ -149,10 +152,6 @@
   }
 }
 .section--more {
-  padding-top: 94px;
-  @include media(sp){
-    padding-top: 60px;
-  }
   .more {
     padding: 40px 0;
     background: #d6d3d3;

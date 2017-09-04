@@ -1258,16 +1258,13 @@ img {
   height: 92px;
 }
 
-.section--new-collection {
+.section--new-collection .image-wide,
+.section--more .image-wide {
   padding-top: 94px;
 }
 
 .section--archives-continuance .arcives__wrapper {
   padding: 80px 20px 0;
-}
-
-.section--more {
-  padding-top: 94px;
 }
 
 .section--more .more {
@@ -1773,16 +1770,13 @@ img {
     padding: 30px 20px 0;
   }
 
-  .section--new-collection{
+  .section--new-collection .image-wide,
+  .section--more .image-wide{
     padding-top: 55px;
   }
 
   .section--archives-continuance .arcives__wrapper{
     padding: 0 10px 20px;
-  }
-
-  .section--more{
-    padding-top: 60px;
   }
 
   .section--more .more{

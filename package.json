@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "fullpage.js": "^2.9.4",
+    "ios-inner-height": "^1.0.0",
     "object-fit-images": "^3.2.3"
   }
 }

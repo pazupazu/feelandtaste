@@ -7,6 +7,7 @@ global.$ = global.jQuery = require("jquery");
 
 import fullpage from 'fullpage.js/dist/jquery.fullpage.min.js'
 import objectFitImages from 'object-fit-images'
+// import innerHeight  from 'ios-inner-height'
 
 $(document).ready(function() {
   //page top
@@ -75,6 +76,9 @@ $(document).ready(function() {
   });
 });
 
+// safari リサイズ
+var height = window.innerHeight;
+
 $(window).on('load resize', function () {
   responsive();
 });
@@ -84,5 +88,11 @@ function responsive() {
   var h = $(window).height();
   if ( w <= 768) {
     $.fn.fullpage.destroy('all');
+  }
+  $('.section').css('height', height + 'px');
+
+  if(window.innerHeight != height) {
+    height = window.innerHeight;
+    $('.section').css('height', height + 'px');
   }
 }

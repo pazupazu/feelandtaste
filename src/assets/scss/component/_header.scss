@@ -35,18 +35,24 @@
 //バーガーメニュー
 .btn-burger{
   position: absolute;
-  top: calc(50vh + 150px);
-  right: calc(50% - 15px);
+  top: 15px;
+  right: 15px;
   z-index: 100;
   transition: all .7s;
 
-  &--top {
-    top: 28px;
+  @include media(tab) {
+    top: calc(50vh + 50px);
+    right: calc(50% - 15px);
+    &--top {
+      top: 28px;
+    }
   }
-
-  @include media(sp) {
-    top: 15px;
-    right: 15px;
+  @include media(pc) {
+    top: calc(50vh + 150px);
+    right: calc(50% - 15px);
+    &--top {
+      top: 28px;
+    }
   }
 }
 

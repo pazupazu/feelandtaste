@@ -1092,14 +1092,10 @@ edition
 
 .btn-burger {
   position: absolute;
-  top: calc(50vh + 150px);
-  right: calc(50% - 15px);
+  top: 15px;
+  right: 15px;
   z-index: 100;
   transition: all .7s;
-}
-
-.btn-burger--top {
-  top: 28px;
 }
 
 /*
@@ -1182,7 +1178,7 @@ img {
 }
 
 .section--top .logo__wrapper {
-  height: 100vh;
+  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1716,11 +1712,6 @@ img {
     display: none !important;
   }
 
-  .btn-burger{
-    top: 15px;
-    right: 15px;
-  }
-
   .image-full{
     height: auto;
   }
@@ -1925,6 +1916,15 @@ img {
     top: 28px;
   }
 
+  .btn-burger{
+    top: calc(50vh + 50px);
+    right: calc(50% - 15px);
+  }
+
+  .btn-burger--top{
+    top: 28px;
+  }
+
   .page--contact .btn-burger,
   .page--edition .btn-burger{
     top: 28px;
@@ -1984,6 +1984,15 @@ img {
     padding: 130px 0 0 0;
   }
 
+  .btn-burger{
+    top: calc(50vh + 150px);
+    right: calc(50% - 15px);
+  }
+
+  .btn-burger--top{
+    top: 28px;
+  }
+
   .story{
     padding: 94px 120px 80px 112px;
   }
@@ -2025,7 +2034,7 @@ img {
 
   .title--about{
     width: 185px;
-    padding: 145px 0 115px;
+    padding: 125px 0 105px;
   }
 }
 
@@ -2038,6 +2047,10 @@ img {
   .arcives__wrapper{
     max-width: 1160px;
     padding: 0 20px;
+  }
+
+  .title--about{
+    padding: 160px 0 140px;
   }
 }
 

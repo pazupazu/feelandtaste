@@ -82,7 +82,10 @@
     }
     @include media (pc) {
       width: 185px;
-      padding: 145px 0 115px;
+      padding: 125px 0 105px;
+    }
+    @include media (wide) {
+      padding: 160px 0 140px;
     }
   }
   &--footer-logo {

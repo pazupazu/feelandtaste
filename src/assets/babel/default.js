@@ -88,11 +88,11 @@ function responsive() {
   var h = $(window).height();
   if ( w <= 768) {
     $.fn.fullpage.destroy('all');
-  }
-  $('.index .section').css('height', height + 'px');
-
-  if(window.innerHeight != height) {
-    height = window.innerHeight;
+  } else {
     $('.index .section').css('height', height + 'px');
+    if(window.innerHeight != height) {
+      height = window.innerHeight;
+      $('.index .section').css('height', height + 'px');
+    }
   }
 }

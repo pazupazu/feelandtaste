@@ -30,7 +30,7 @@
 
   &__item{
     display:block;
-    padding: 0 0 36px 0;
+    padding: 20px;
     @include font-size(24);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -39,13 +39,12 @@
     text-indent: .3em;
     color:#fff;
     transition: .2s;
-
-    @include media(sp) {
-      text-align: center;
-      padding: 20px 20px;
-    }
+    text-align: center;
     @include media(tab) {
       padding: 0 0 20px 0;
+    }
+    @include media(pc) {
+      padding: 0 0 36px 0;
     }
     &:hover{
       color:#62798c;

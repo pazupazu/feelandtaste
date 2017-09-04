@@ -990,7 +990,7 @@ edition
 
 .gloval-nav__item {
   display: block;
-  padding: 0 0 36px 0;
+  padding: 20px;
   font-size: 24px;
   font-size: 24px;
   font-size: 1.5rem;
@@ -1001,6 +1001,7 @@ edition
   text-indent: .3em;
   color: #fff;
   transition: .2s;
+  text-align: center;
 }
 
 .gloval-nav__item:hover {
@@ -1631,11 +1632,6 @@ img {
     margin: 0 0 10px;
   }
 
-  .gloval-nav__item{
-    text-align: center;
-    padding: 20px 20px;
-  }
-
   .row--mb-md{
     margin: 0 0 5px;
   }
@@ -1982,6 +1978,10 @@ img {
 
   .gloval-nav__inner{
     padding: 130px 0 0 0;
+  }
+
+  .gloval-nav__item{
+    padding: 0 0 36px 0;
   }
 
   .btn-burger{

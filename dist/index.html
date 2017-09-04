@@ -36,12 +36,12 @@
 
       <div class="gloval-nav">
         <div class="gloval-nav__inner">
-          <a href="index.html#section1" class="gloval-nav__item"><span>TOP</span></a>
-          <a href="index.html#section5" class="gloval-nav__item"><span>STORY</span></a>
-          <a href="index.html#section8" class="gloval-nav__item"><span>NEW COLLECTION</span></a>
-          <a href="index.html#section10" class="gloval-nav__item"><span>ARCHIVES</span></a>
-          <a href="index.html#section12" class="gloval-nav__item"><span>ABOUT</span></a>
-          <a href="contact/contact.html" class="gloval-nav__item" target="_blank"><span>CONTACT</span></a>
+          <a href="index.html#section1" class="gloval-nav__item item--top"><span>TOP</span></a>
+          <a href="index.html#section5" class="gloval-nav__item item--story"><span>STORY</span></a>
+          <a href="index.html#section8" class="gloval-nav__item item--new-collection"><span>NEW COLLECTION</span></a>
+          <a href="index.html#section10" class="gloval-nav__item item--archives"><span>ARCHIVES</span></a>
+          <a href="index.html#section12" class="gloval-nav__item item--about"><span>ABOUT</span></a>
+          <a href="contact/contact.html" class="gloval-nav__item item--contact" target="_blank"><span>CONTACT</span></a>
         </div><!-- /.gloval-nav__inner -->
         <div class="btns">
           <a class="btn-sns btn-sns--facebook" href="https://www.facebook.com/FEEL-AND-TASTE-217635088638965/" target="_blank"><i class="icon-facebook"></i></a>
@@ -54,7 +54,7 @@
   </div><!-- /.header -->
     
   <div id="fullpage">
-    <div class="section section--1 section--top fp-auto-height-responsive">
+    <div id="sectionTop" class="section section--1 section--top fp-auto-height-responsive">
       <div class="logo__wrapper">
         <h1 class="logo"><a href="index.html"><img src="assets/image/logo.png" alt="secours"></a></h1>
       </div><!-- /.logo__wrapper -->
@@ -65,19 +65,19 @@
       </div><!-- /.btn-group -->
     </div><!-- /.section--1 -->
 
-    <div class="section section--2 fp-auto-height-responsive">
+    <div id="sectionimage1" class="section section--2 fp-auto-height-responsive">
       <img src="assets/image/IMAGE1.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--2 -->
 
-    <div class="section section--3 fp-auto-height-responsive">
+    <div id="sectionimage2" class="section section--3 fp-auto-height-responsive">
       <img src="assets/image/IMAGE2.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--3 -->
 
-    <div class="section section--4 fp-auto-height-responsive">
+    <div id="sectionimage3" class="section section--4 fp-auto-height-responsive">
       <img src="assets/image/IMAGE3.jpg" alt="FEELANDTASTE" class="image-full">
     </div><!-- /.section--4 -->
 
-    <div class="section section--5 section--story fp-auto-height-responsive">
+    <div id="sectionStory" class="section section--5 section--story fp-auto-height-responsive">
       <div class="story">
         <h2 class="title title--imgtxt title--story">
           <span>FEEL AND TASTE 感じること、味わうこと</span>
@@ -110,7 +110,7 @@
       </div><!-- /.story -->
     </div><!-- /.section--5 -->
 
-    <div class="section section--6 section--story-eng fp-auto-height-responsive">
+    <div id="sectionStoryEng" class="section section--6 section--story-eng fp-auto-height-responsive">
       <div class="story">
         <h2 class="title title--story-eng">
           To Feel and to Taste
@@ -148,7 +148,7 @@
       </div><!-- /.story -->
     </div><!-- /.section--6 -->
 
-    <div class="section section--7 section--story-eng-continuance fp-auto-height-responsive">
+    <div id="sectionStoryContinuance" class="section section--7 section--story-eng-continuance fp-auto-height-responsive">
       <div class="story">
         <div class="story__body__wrapper">
           <div class="story__body">
@@ -163,7 +163,7 @@
       </div>
     </div><!-- /.section--7 -->
 
-    <div class="section section--8 section--new-collection fp-auto-height-responsive">
+    <div id="sectionNewCollection" class="section section--8 section--new-collection fp-auto-height-responsive">
       <div class="image-wide">
         <img src="assets/image/ph2.jpg" alt="">
       </div>
@@ -172,7 +172,7 @@
       </div>
     </div><!-- /.section--8 -->
 
-    <div class="section section--9 section--more fp-auto-height-responsive">
+    <div id="sectionMore" class="section section--9 section--more fp-auto-height-responsive">
       <div class="image-wide">
         <img src="assets/image/ph3.jpg" alt="">
       </div>
@@ -188,7 +188,7 @@
       </div>
     </div><!-- /.section--9 -->
 
-    <div class="section section--10 section--archives fp-auto-height-responsive">
+    <div id="sectionArchives" class="section section--10 section--archives fp-auto-height-responsive">
       <h2 class="title title--imgtxt title--archives">
         <span>archives</span>
         <img class="image-mw100" src="assets/image/title-archives.png" alt="archives">
@@ -222,7 +222,7 @@
     </div><!-- /.section--10 -->
 
     <!-- ↓opne時非表示 -->
-    <div class="section section--11 section--archives section--archives-continuance fp-auto-height-responsive">
+    <div id="sectionArchivesContinuance" class="section section--11 section--archives section--archives-continuance fp-auto-height-responsive">
       <div class="arcives__wrapper">
         <a href="edition01.html" target="_blank" class="arcive">
           <div class="arcive__image"><img src="assets/image/edition03.jpg" alt=""></div>
@@ -264,7 +264,7 @@
     </div><!-- /.section--11 -->
     <!-- ↑opne時非表示 -->
 
-    <div class="section section--12 section--about fp-auto-height-responsive">
+    <div id="sectionAbout" class="section section--12 section--about fp-auto-height-responsive">
         <h2 class="title title--imgtxt title--about">
           <span>about</span>
           <img class="image-mw100" src="assets/image/title-about.png" alt="about">

@@ -46,9 +46,36 @@ $(document).ready(function() {
   objectFitImages(fullImage);
 });
 
+// width 769以上でのみ発火させる
 $(document).ready(function() {
-  $('#fullpage').fullpage({
+  var w = $(window).width();
+  if ( w >= 769) {
+    page();
+  } else {
+    // // グロナビのターゲットを書き換え
+    // $('.gloval-nav__inner .item--top').replaceWith('<a href="index.html#sectionTop" class="gloval-nav__item"><span>TOP</span></a>');
+    // $('.gloval-nav__inner .item--story').replaceWith('<a href="index.html#sectionStory" class="gloval-nav__item"><span>STORY</span></a>');
+    // $('.gloval-nav__inner .item--new-collection').replaceWith('<a href="index.html#sectionNewCollection" class="gloval-nav__item"><span>NEW COLLECTION</span></a>');
+    // $('.gloval-nav__inner .item--archives').replaceWith('<a href="index.html#sectionArchives" class="gloval-nav__item"><span>ARCHIVES</span></a>');
+    // $('.gloval-nav__inner .item--about').replaceWith('<a href="index.html#sectionAbout"class="gloval-nav__item"><span>ABOUT</span></a>');
 
+    // $('.gloval-nav__item').click(function() {
+    //   var speed = 600;
+    //   var href= $(this).attr("href");
+    //   var target = $(href == "#" || href == "" ? 'html' : href);
+    //   var position = target.offset().top;
+    //   $('.btn-burger').addClass('btn-burger--top');
+    //   $(".header").removeClass("open");
+    //   $('body,html').animate({scrollTop:position}, speed, 'swing');
+      
+    //   return false;
+    // });
+  }
+});
+
+// fullapge.js自体をラップ
+function page() {
+  $('#fullpage').fullpage({
     anchors:[
       'section1',
       'section2',
@@ -64,9 +91,10 @@ $(document).ready(function() {
       'section12'
     ],
     scrollBar: false,
-    scrollOverflow: true,
+    scrollOverflow: true, //高さがvh以上だった場合スクロールさせる
     onLeave: function(index, nextIndex, direction){
       var loadedSection = $(this);
+      // section1以外ではburgermenuを上につける
       if(nextIndex >= 2){
         $('.btn-burger').addClass('btn-burger--top');
       } else {
@@ -74,9 +102,9 @@ $(document).ready(function() {
       }
     }
   });
-});
+}
 
-// safari リサイズ
+// safari ランドスケープ リサイズ
 var height = window.innerHeight;
 
 $(window).on('load resize', function () {
@@ -85,10 +113,7 @@ $(window).on('load resize', function () {
 
 function responsive() {
   var w = $(window).width();
-  var h = $(window).height();
-  if ( w <= 768) {
-    $.fn.fullpage.destroy('all');
-  } else {
+  if ( w >= 769) {
     $('.index .section').css('height', height + 'px');
     if(window.innerHeight != height) {
       height = window.innerHeight;

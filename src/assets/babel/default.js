@@ -46,35 +46,8 @@ $(document).ready(function() {
   objectFitImages(fullImage);
 });
 
-// width 769以上でのみ発火させる
+// fullpage.js
 $(document).ready(function() {
-  var w = $(window).width();
-  if ( w >= 769) {
-    page();
-  } else {
-    // // グロナビのターゲットを書き換え
-    // $('.gloval-nav__inner .item--top').replaceWith('<a href="index.html#sectionTop" class="gloval-nav__item"><span>TOP</span></a>');
-    // $('.gloval-nav__inner .item--story').replaceWith('<a href="index.html#sectionStory" class="gloval-nav__item"><span>STORY</span></a>');
-    // $('.gloval-nav__inner .item--new-collection').replaceWith('<a href="index.html#sectionNewCollection" class="gloval-nav__item"><span>NEW COLLECTION</span></a>');
-    // $('.gloval-nav__inner .item--archives').replaceWith('<a href="index.html#sectionArchives" class="gloval-nav__item"><span>ARCHIVES</span></a>');
-    // $('.gloval-nav__inner .item--about').replaceWith('<a href="index.html#sectionAbout"class="gloval-nav__item"><span>ABOUT</span></a>');
-
-    // $('.gloval-nav__item').click(function() {
-    //   var speed = 600;
-    //   var href= $(this).attr("href");
-    //   var target = $(href == "#" || href == "" ? 'html' : href);
-    //   var position = target.offset().top;
-    //   $('.btn-burger').addClass('btn-burger--top');
-    //   $(".header").removeClass("open");
-    //   $('body,html').animate({scrollTop:position}, speed, 'swing');
-      
-    //   return false;
-    // });
-  }
-});
-
-// fullapge.js自体をラップ
-function page() {
   $('#fullpage').fullpage({
     anchors:[
       'section1',
@@ -102,7 +75,7 @@ function page() {
       }
     }
   });
-}
+});
 
 // safari ランドスケープ リサイズ
 var height = window.innerHeight;
@@ -113,7 +86,15 @@ $(window).on('load resize', function () {
 
 function responsive() {
   var w = $(window).width();
-  if ( w >= 769) {
+  if ( w <= 768) {
+    $.fn.fullpage.destroy('all');
+    
+    // destroyするとページ内リンクができない data-anchorタグが挿入されない
+    $('.index .section').each(function(index){
+      let i = index +1;
+      $(this).attr('id', 'section' + i);
+    });
+  } else {
     $('.index .section').css('height', height + 'px');
     if(window.innerHeight != height) {
       height = window.innerHeight;
@@ -121,3 +102,13 @@ function responsive() {
     }
   }
 }
+
+$(document).ready(function() {
+  // ページ内リンク
+  // 動的idに対してのイベントなので第二引数にターゲットを入れる
+  $(document).on('click', '.gloval-nav__item', function() {
+    var targetY = $(this.hash).offset().top;
+    $("html,body").animate({scrollTop: targetY}, 600);
+    return false;
+  });
+});
